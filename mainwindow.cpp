@@ -100,3 +100,15 @@ void MainWindow::on_RBHobbyIsShit_clicked()
         ui->PBTell->setEnabled(true);
 }
 
+
+void MainWindow::on_PBTell_clicked()
+{
+   QMessageBox *message;
+    if (ui->RBOverallHappy->isChecked()){
+        message->information(this,"Your happiness meter...", "You appear to be rather happy! Congrats!");
+    }
+    else if (ui->RBOverallNotHappy->isChecked()){
+        message->information(this,"Your happiness meter...", "You appear to be not so happy. Sorry!");
+    }
+}
+

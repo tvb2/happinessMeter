@@ -41,6 +41,8 @@ private slots:
 
     void on_RBHobbyIsShit_clicked();
 
+    void on_PBTell_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
