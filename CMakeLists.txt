@@ -19,6 +19,9 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        professionallife.h
+        professionallife.cpp
+        professionallife.ui
         ${TS_FILES}
 )
 

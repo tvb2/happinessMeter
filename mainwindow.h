@@ -2,6 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QMessageBox>
+#include <QCheckBox>
+
+#include "professionallife.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -14,6 +18,28 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+private slots:
+     void on_RBProfessionalBusy_clicked();
+
+    void on_RBOverallHappy_clicked();
+    void on_RBOverallNotHappy_clicked();
+
+    void on_RBPersonalLTR_clicked();
+
+    void on_RBPersonalSometimes_clicked();
+
+    void on_RBPersonalhate_clicked();
+
+    void on_RBProfessionalNotBusy_clicked();
+
+    void on_RBHaveHobby_clicked();
+
+    void on_RBNoHobby_clicked();
+
+    void on_RBHobbyIsWork_clicked();
+
+    void on_RBHobbyIsShit_clicked();
 
 private:
     Ui::MainWindow *ui;
