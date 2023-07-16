@@ -69,10 +69,6 @@ void MainWindow::on_RBProfessionalBusy_clicked()
 {
     if (!ui->GBHobby->isEnabled())
         ui->GBHobby->setEnabled(true);
-
-    ProfessionalLife *p = new ProfessionalLife();
-    //p->show();
-    p->exec();
 }
 void MainWindow::on_RBProfessionalNotBusy_clicked()
 {

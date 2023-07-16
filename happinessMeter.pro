@@ -10,17 +10,14 @@ CONFIG += c++17
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
-        professionallife.cpp
+        mainwindow.cpp
 
 HEADERS += \
-        professionallife.h \
         mainwindow.h
 
 
 FORMS += \
-        mainwindow.ui \
-	professionallife.ui
+        mainwindow.ui
 DISTFILES += \
     android/AndroidManifest.xml \
     android/build.gradle \
