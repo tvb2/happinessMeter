@@ -49,6 +49,10 @@ void MainWindow::on_RBPersonalLTR_clicked()
         ui->GBProfessionalLife->setEnabled(true);
     if (!ui->CBEnoughMoney->isEnabled())
         ui->CBEnoughMoney->setEnabled(true);
+
+    LTR *ltr = new LTR();
+    ltr->exec();
+
 }
 void MainWindow::on_RBPersonalSometimes_clicked()
 {
@@ -56,6 +60,9 @@ void MainWindow::on_RBPersonalSometimes_clicked()
         ui->GBProfessionalLife->setEnabled(true);
     if (!ui->CBEnoughMoney->isEnabled())
         ui->CBEnoughMoney->setEnabled(true);
+
+    STR *str = new STR();
+    str->exec();
 }
 void MainWindow::on_RBPersonalhate_clicked()
 {
@@ -63,6 +70,9 @@ void MainWindow::on_RBPersonalhate_clicked()
         ui->GBProfessionalLife->setEnabled(true);
     if (!ui->CBEnoughMoney->isEnabled())
         ui->CBEnoughMoney->setEnabled(true);
+
+    ZTR *ztr = new ZTR();
+    ztr->exec();
 }
 
 void MainWindow::on_RBProfessionalBusy_clicked()
@@ -78,6 +88,9 @@ void MainWindow::on_RBProfessionalNotBusy_clicked()
 {
     if (!ui->GBHobby->isEnabled())
         ui->GBHobby->setEnabled(true);
+
+    NotBusy *ntbusy = new NotBusy();
+    ntbusy->exec();
 }
 
 void MainWindow::on_RBHaveHobby_clicked(){
@@ -99,7 +112,6 @@ void MainWindow::on_RBHobbyIsShit_clicked()
     if (!ui->PBTell->isEnabled())
         ui->PBTell->setEnabled(true);
 }
-
 
 void MainWindow::on_PBTell_clicked()
 {

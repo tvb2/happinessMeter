@@ -6,6 +6,11 @@
 #include <QCheckBox>
 
 #include "professionallife.h"
+#include "notbusy.h"
+
+#include "ltr.h"
+#include "str.h"
+#include "ztr.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,25 +25,20 @@ public:
     ~MainWindow();
 
 private slots:
-     void on_RBProfessionalBusy_clicked();
 
     void on_RBOverallHappy_clicked();
     void on_RBOverallNotHappy_clicked();
 
     void on_RBPersonalLTR_clicked();
-
     void on_RBPersonalSometimes_clicked();
-
     void on_RBPersonalhate_clicked();
 
+    void on_RBProfessionalBusy_clicked();
     void on_RBProfessionalNotBusy_clicked();
 
     void on_RBHaveHobby_clicked();
-
     void on_RBNoHobby_clicked();
-
     void on_RBHobbyIsWork_clicked();
-
     void on_RBHobbyIsShit_clicked();
 
     void on_PBTell_clicked();
