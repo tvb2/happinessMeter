@@ -1,9 +1,9 @@
-#include "professionallife.h"
-#include "ui_professionallife.h"
+#include "busy.h"
+#include "ui_busy.h"
 
-ProfessionalLife::ProfessionalLife(QWidget *parent) :
+Busy::Busy(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::ProfessionalLife)
+    ui(new Ui::Busy)
 {
     ui->setupUi(this);
 
@@ -23,68 +23,68 @@ ProfessionalLife::ProfessionalLife(QWidget *parent) :
 
 }
 
-ProfessionalLife::~ProfessionalLife()
+Busy::~Busy()
 {
     delete ui;
 }
 
-void ProfessionalLife::on_RBOccupationFun_clicked()
+void Busy::on_RBOccupationFun_clicked()
 {
     if (!ui->GBPeople->isEnabled())
         ui->GBPeople->setEnabled(true);
 }
-void ProfessionalLife::on_RBRBOccupationNorm_clicked()
+void Busy::on_RBRBOccupationNorm_clicked()
 {
     if (!ui->GBPeople->isEnabled())
         ui->GBPeople->setEnabled(true);
 }
-void ProfessionalLife::on_RBOccupationDull_clicked()
+void Busy::on_RBOccupationDull_clicked()
 {
     if (!ui->GBPeople->isEnabled())
         ui->GBPeople->setEnabled(true);
 }
 
 
-void ProfessionalLife::on_RBPeopleGreat_clicked()
+void Busy::on_RBPeopleGreat_clicked()
 {
     if (!    ui->GBMoney->isEnabled())
             ui->GBMoney->setEnabled(true);
 }
-void ProfessionalLife::on_RBPeopleNorm_clicked()
+void Busy::on_RBPeopleNorm_clicked()
 {
     if (!    ui->GBMoney->isEnabled())
             ui->GBMoney->setEnabled(true);
 }
-void ProfessionalLife::on_RBPeopleUgly_clicked()
+void Busy::on_RBPeopleUgly_clicked()
 {
     if (!    ui->GBMoney->isEnabled())
             ui->GBMoney->setEnabled(true);
 }
 
 
-void ProfessionalLife::on_radioButton_3_clicked()
+void Busy::on_radioButton_3_clicked()
 {
     if (!ui->PBOK->isEnabled())
             ui->PBOK->setEnabled(true);
 }
-void ProfessionalLife::on_radioButton_4_clicked()
+void Busy::on_radioButton_4_clicked()
 {
     if (!ui->PBOK->isEnabled())
             ui->PBOK->setEnabled(true);
 }
-void ProfessionalLife::on_radioButton_5_clicked()
+void Busy::on_radioButton_5_clicked()
 {
     if (!ui->PBOK->isEnabled())
             ui->PBOK->setEnabled(true);
 }
 
 
-void ProfessionalLife::on_PBOK_clicked()
+void Busy::on_PBOK_clicked()
 {
-    ProfessionalLife::~ProfessionalLife();
+    Busy::~Busy();
 }
 
-void ProfessionalLife::closeEvent (QCloseEvent *event)
+void Busy::closeEvent (QCloseEvent *event)
 {
     QMessageBox::StandardButton resBtn = QMessageBox::question(this, "Professional Life",
                                                                tr("Please select at least one option in each group\n"),

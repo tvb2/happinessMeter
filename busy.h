@@ -1,21 +1,21 @@
-#ifndef PROFESSIONALLIFE_H
-#define PROFESSIONALLIFE_H
+#ifndef BUSY_H
+#define BUSY_H
 
 #include <QDialog>
 #include <QCloseEvent>
 #include <QMessageBox>
 
 namespace Ui {
-class ProfessionalLife;
+class Busy;
 }
 
-class ProfessionalLife : public QDialog
+class Busy : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ProfessionalLife(QWidget *parent = nullptr);
-    ~ProfessionalLife();
+    explicit Busy(QWidget *parent = nullptr);
+    ~Busy();
 
 private slots:
     void on_RBOccupationFun_clicked();
@@ -31,7 +31,7 @@ private slots:
     void closeEvent (QCloseEvent *event);
 
 private:
-    Ui::ProfessionalLife *ui;
+    Ui::Busy *ui;
 };
 
-#endif // PROFESSIONALLIFE_H
+#endif // BUSY_H

@@ -5,7 +5,7 @@
 #include <QMessageBox>
 #include <QCheckBox>
 
-#include "professionallife.h"
+#include "busy.h"
 #include "notbusy.h"
 
 #include "ltr.h"

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HobbyCrap</class>
+ <widget class="QDialog" name="HobbyCrap">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>385</width>
+    <height>654</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>No time for hobby</string>
+  </property>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

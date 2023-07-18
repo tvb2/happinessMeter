@@ -1,5 +1,9 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "ui_notbusy.h"
+#include "ui_ltr.h"
+#include "ui_str.h"
+#include "ui_ztr.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -80,7 +84,7 @@ void MainWindow::on_RBProfessionalBusy_clicked()
     if (!ui->GBHobby->isEnabled())
         ui->GBHobby->setEnabled(true);
 
-    ProfessionalLife *p = new ProfessionalLife();
+    Busy *p = new Busy();
     //p->show();
     p->exec();
 }
