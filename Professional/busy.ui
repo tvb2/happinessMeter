@@ -27,21 +27,21 @@
      </property>
      <layout class="QGridLayout" name="gridLayout_4">
       <item row="0" column="0">
-       <widget class="QRadioButton" name="radioButton_3">
+       <widget class="QRadioButton" name="RBMoneyExc">
         <property name="text">
          <string>The money is excellent</string>
         </property>
        </widget>
       </item>
       <item row="1" column="0">
-       <widget class="QRadioButton" name="radioButton_4">
+       <widget class="QRadioButton" name="RBMoneyNorm">
         <property name="text">
          <string>The money is OK, nothing extraordinary</string>
         </property>
        </widget>
       </item>
       <item row="2" column="0">
-       <widget class="QRadioButton" name="radioButton_5">
+       <widget class="QRadioButton" name="RBMoneyBad">
         <property name="text">
          <string>The money is bad</string>
         </property>

@@ -21,9 +21,16 @@ Busy::Busy(QWidget *parent) :
 
 //Money widgets
     ui->GBMoney->setEnabled(false);
+    QObject::connect(ui->RBPeopleGreat, &QRadioButton::clicked, this, &Busy::visMoney);
+    QObject::connect(ui->RBPeopleNorm, &QRadioButton::clicked, this, &Busy::visMoney);
+    QObject::connect(ui->RBPeopleUgly, &QRadioButton::clicked, this, &Busy::visMoney);
 
 //buttons
     ui->PBOK->setEnabled(false);
+    QObject::connect(ui->RBMoneyExc, &QRadioButton::clicked, this, &Busy::visPBOK);
+    QObject::connect(ui->RBMoneyNorm, &QRadioButton::clicked, this, &Busy::visPBOK);
+    QObject::connect(ui->RBMoneyBad, &QRadioButton::clicked, this, &Busy::visPBOK);
+    QObject::connect(ui->PBOK, &QPushButton::clicked, this, &Busy::finalize);
 }
 
 Busy::~Busy()
@@ -87,15 +94,33 @@ void Busy::visPeople(){
     if (!ui->GBPeople->isEnabled())
         ui->GBPeople->setEnabled(true);
 }
+void Busy::visMoney(){
+    if (!    ui->GBMoney->isEnabled())
+        ui->GBMoney->setEnabled(true);
+}
+void Busy::visPBOK(){
+    if (!ui->PBOK->isEnabled())
+        ui->PBOK->setEnabled(true);
+    this->complete = true;
+}
 void Busy::closeEvent (QCloseEvent *event)
 {
+    if (!this->complete){
     QMessageBox::StandardButton resBtn = QMessageBox::question(this, "Professional Life",
                                                                tr("Please select at least one option in each group\n"),
                                                                QMessageBox::Ok | QMessageBox::NoButton, QMessageBox::Ok);
-//  (here check if at least one option was selected in each group and if so, accept, otherwise)
-    if (false)
-            event->accept();
-    else
-            event->ignore();
+        event->ignore();
+    }
+    else{
+        event->accept();
+    }
 }
-
+void Busy::keyPressEvent(QKeyEvent *evt)
+{
+    if(evt->key() == Qt::Key_Escape)
+            return;
+    QDialog::keyPressEvent(evt);
+}
+void Busy::finalize(){
+    this->close();
+}

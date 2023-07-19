@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <QCloseEvent>
+#include <QKeyEvent>
 #include <QMessageBox>
 
 namespace Ui {
@@ -20,23 +21,17 @@ public:
 public:
 
 signals:
-    void on_RBOccupationFun_clicked();
-    void on_RBRBOccupationNorm_clicked();
-    void on_RBOccupationDull_clicked();
-    void on_RBPeopleGreat_clicked();
-
-    void on_RBPeopleNorm_clicked();
-    void on_RBPeopleUgly_clicked();
-    void on_radioButton_3_clicked();
-    void on_radioButton_4_clicked();
-    void on_radioButton_5_clicked();
-    void on_PBOK_clicked();
 
     private slots:
     void visPeople();
+    void visMoney();
+    void visPBOK();
     void closeEvent (QCloseEvent *event);
+    void keyPressEvent(QKeyEvent *evt);
+    void finalize();
 private:
     Ui::Busy *ui;
+    bool complete{0};
 };
 
 #endif // BUSY_H
