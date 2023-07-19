@@ -19,7 +19,8 @@ SOURCES += \
         Professional/busy.cpp \
         Professional/notbusy.cpp \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+        segment.cpp
 
 
 HEADERS += \
@@ -32,7 +33,8 @@ HEADERS += \
         Personal/ztr.h \
         Professional/busy.h \
         Professional/notbusy.h \
-        mainwindow.h
+        mainwindow.h \
+        segment.h
 
 FORMS += \
     Hobby/hobbycrap.ui \
