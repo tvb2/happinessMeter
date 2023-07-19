@@ -20,6 +20,7 @@ SOURCES += \
         Professional/notbusy.cpp \
         main.cpp \
         mainwindow.cpp \
+        professional.cpp \
         segment.cpp
 
 
@@ -34,6 +35,7 @@ HEADERS += \
         Professional/busy.h \
         Professional/notbusy.h \
         mainwindow.h \
+        professional.h \
         segment.h
 
 FORMS += \
