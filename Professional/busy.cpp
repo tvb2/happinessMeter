@@ -15,92 +15,69 @@ Busy::Busy(QWidget *parent) :
 //People widgets
     ui->GBPeople->setEnabled(false);
     //show People group when either RB is selected
-    QObject::connect(ui->RBOccupationFun, &QRadioButton::clicked, this, &Busy::visPeople);
-    QObject::connect(ui->RBRBOccupationNorm, &QRadioButton::clicked, this, &Busy::visPeople);
-    QObject::connect(ui->RBOccupationDull, &QRadioButton::clicked, this, &Busy::visPeople);
+    QObject::connect(ui->RBOccupationFun, &QRadioButton::clicked, this, &Busy::occupationSet);
+    QObject::connect(ui->RBOccupationNorm, &QRadioButton::clicked, this, &Busy::occupationSet);
+    QObject::connect(ui->RBOccupationDull, &QRadioButton::clicked, this, &Busy::occupationSet);
 
 //Money widgets
     ui->GBMoney->setEnabled(false);
-    QObject::connect(ui->RBPeopleGreat, &QRadioButton::clicked, this, &Busy::visMoney);
-    QObject::connect(ui->RBPeopleNorm, &QRadioButton::clicked, this, &Busy::visMoney);
-    QObject::connect(ui->RBPeopleUgly, &QRadioButton::clicked, this, &Busy::visMoney);
+    QObject::connect(ui->RBPeopleGreat, &QRadioButton::clicked, this, &Busy::peopleSet);
+    QObject::connect(ui->RBPeopleNorm, &QRadioButton::clicked, this, &Busy::peopleSet);
+    QObject::connect(ui->RBPeopleUgly, &QRadioButton::clicked, this, &Busy::peopleSet);
 
 //buttons
     ui->PBOK->setEnabled(false);
-    QObject::connect(ui->RBMoneyExc, &QRadioButton::clicked, this, &Busy::visPBOK);
-    QObject::connect(ui->RBMoneyNorm, &QRadioButton::clicked, this, &Busy::visPBOK);
-    QObject::connect(ui->RBMoneyBad, &QRadioButton::clicked, this, &Busy::visPBOK);
+    QObject::connect(ui->RBMoneyExc, &QRadioButton::clicked, this, &Busy::moneySet);
+    QObject::connect(ui->RBMoneyNorm, &QRadioButton::clicked, this, &Busy::moneySet);
+    QObject::connect(ui->RBMoneyBad, &QRadioButton::clicked, this, &Busy::moneySet);
     QObject::connect(ui->PBOK, &QPushButton::clicked, this, &Busy::finalize);
 }
 
-Busy::~Busy()
-{
+Busy::~Busy(){
     delete ui;
 }
-/*
-void Busy::on_RBOccupationFun_clicked()
-{
+
+void Busy::occupationSet(){
+//make available the next section
     if (!ui->GBPeople->isEnabled())
         ui->GBPeople->setEnabled(true);
-}
-void Busy::on_RBRBOccupationNorm_clicked()
-{
-    if (!ui->GBPeople->isEnabled())
-        ui->GBPeople->setEnabled(true);
-}
-void Busy::on_RBOccupationDull_clicked()
-{
-    if (!ui->GBPeople->isEnabled())
-        ui->GBPeople->setEnabled(true);
-}
 
+//set rating based on selection
+    if (ui->RBOccupationFun->isChecked())
+        this->occupation = 1;
+    if (ui->RBOccupationNorm->isChecked())
+        this->occupation = 0.5;
+    if (ui->RBOccupationDull->isChecked())
+        this->occupation = 0;
 
-void Busy::on_RBPeopleGreat_clicked()
-{
-    if (!    ui->GBMoney->isEnabled())
-            ui->GBMoney->setEnabled(true);
 }
-void Busy::on_RBPeopleNorm_clicked()
-{
-    if (!    ui->GBMoney->isEnabled())
-            ui->GBMoney->setEnabled(true);
-}
-void Busy::on_RBPeopleUgly_clicked()
-{
-    if (!    ui->GBMoney->isEnabled())
-            ui->GBMoney->setEnabled(true);
-}
-
-
-void Busy::on_radioButton_3_clicked()
-{
-    if (!ui->PBOK->isEnabled())
-            ui->PBOK->setEnabled(true);
-}
-void Busy::on_radioButton_4_clicked()
-{
-    if (!ui->PBOK->isEnabled())
-            ui->PBOK->setEnabled(true);
-}
-void Busy::on_radioButton_5_clicked()
-{
-    if (!ui->PBOK->isEnabled())
-            ui->PBOK->setEnabled(true);
-}
-void Busy::on_PBOK_clicked()
-*/
-
-void Busy::visPeople(){
-    if (!ui->GBPeople->isEnabled())
-        ui->GBPeople->setEnabled(true);
-}
-void Busy::visMoney(){
+void Busy::peopleSet(){
+    //make available the next section
     if (!    ui->GBMoney->isEnabled())
         ui->GBMoney->setEnabled(true);
+
+//set rating based on selection
+    if (ui->RBPeopleGreat->isChecked())
+        this->people = 1;
+    if (ui->RBPeopleNorm->isChecked())
+        this->people= 0.5;
+    if (ui->RBPeopleUgly->isChecked())
+        this->people= 0;
 }
-void Busy::visPBOK(){
+void Busy::moneySet(){
+//make available the next section
     if (!ui->PBOK->isEnabled())
         ui->PBOK->setEnabled(true);
+
+//set rating based on selection
+    if (ui->RBMoneyExc->isChecked())
+        this->money = 1;
+    if (ui->RBMoneyNorm->isChecked())
+        this->money= 0.5;
+    if (ui->RBMoneyBad->isChecked())
+        this->money= 0;
+
+//flag to report that all options have been set
     this->complete = true;
 }
 void Busy::closeEvent (QCloseEvent *event)
@@ -112,7 +89,7 @@ void Busy::closeEvent (QCloseEvent *event)
         event->ignore();
     }
     else{
-        event->accept();
+        this->finalize();
     }
 }
 void Busy::keyPressEvent(QKeyEvent *evt)
@@ -122,5 +99,7 @@ void Busy::keyPressEvent(QKeyEvent *evt)
     QDialog::keyPressEvent(evt);
 }
 void Busy::finalize(){
+    this->total = (occupation + people + money)/3;
+    qDebug() << "professional rating: " << total;
     this->close();
 }

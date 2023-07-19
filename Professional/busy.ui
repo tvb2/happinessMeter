@@ -131,7 +131,7 @@
        </widget>
       </item>
       <item row="1" column="0">
-       <widget class="QRadioButton" name="RBRBOccupationNorm">
+       <widget class="QRadioButton" name="RBOccupationNorm">
         <property name="text">
          <string>What I do norm</string>
         </property>
