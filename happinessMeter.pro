@@ -9,42 +9,43 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        busy.cpp \
-        hobbycrap.cpp \
-        hobbyno.cpp \
-        hobbywork.cpp \
-        hobbyyes.cpp \
-        ltr.cpp \
+        Hobby/hobbycrap.cpp \
+        Hobby/hobbyno.cpp \
+        Hobby/hobbywork.cpp \
+        Hobby/hobbyyes.cpp \
+        Personal/ltr.cpp \
+        Personal/str.cpp \
+        Personal/ztr.cpp \
+        Professional/busy.cpp \
+        Professional/notbusy.cpp \
         main.cpp \
-        mainwindow.cpp \
-        notbusy.cpp \
-        str.cpp \
-        ztr.cpp
+        mainwindow.cpp
+
 
 HEADERS += \
-        busy.h \
-        hobbycrap.h \
-        hobbyno.h \
-        hobbywork.h \
-        hobbyyes.h \
-        ltr.h \
-        notbusy.h \
-        mainwindow.h \
-        str.h \
-        ztr.h
-
+        Hobby/hobbycrap.h \
+        Hobby/hobbyno.h \
+        Hobby/hobbywork.h \
+        Hobby/hobbyyes.h \
+        Personal/ltr.h \
+        Personal/str.h \
+        Personal/ztr.h \
+        Professional/busy.h \
+        Professional/notbusy.h \
+        mainwindow.h
 
 FORMS += \
-    busy.ui \
-    hobbycrap.ui \
-    hobbyno.ui \
-    hobbywork.ui \
-    hobbyyes.ui \
-    ltr.ui \
-        mainwindow.ui \
-    notbusy.ui \
-    str.ui \
-    ztr.ui
+    Hobby/hobbycrap.ui \
+    Hobby/hobbyno.ui \
+    Hobby/hobbywork.ui \
+    Hobby/hobbyyes.ui \
+    Personal/ltr.ui \
+    Personal/str.ui \
+    Personal/ztr.ui \
+    Professional/busy.ui \
+    Professional/notbusy.ui \
+    mainwindow.ui
+
 DISTFILES += \
     android/AndroidManifest.xml \
     android/build.gradle \
