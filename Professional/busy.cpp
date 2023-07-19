@@ -27,7 +27,7 @@ Busy::~Busy()
 {
     delete ui;
 }
-
+/*
 void Busy::on_RBOccupationFun_clicked()
 {
     if (!ui->GBPeople->isEnabled())
@@ -77,12 +77,8 @@ void Busy::on_radioButton_5_clicked()
     if (!ui->PBOK->isEnabled())
             ui->PBOK->setEnabled(true);
 }
-
-
 void Busy::on_PBOK_clicked()
-{
-    Busy::~Busy();
-}
+*/
 
 void Busy::closeEvent (QCloseEvent *event)
 {

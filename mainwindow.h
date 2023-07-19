@@ -5,12 +5,12 @@
 #include <QMessageBox>
 #include <QCheckBox>
 
-#include "busy.h"
-#include "notbusy.h"
+#include "Professional/busy.h"
+#include "Professional/notbusy.h"
 
-#include "ltr.h"
-#include "str.h"
-#include "ztr.h"
+#include "Personal/ltr.h"
+#include "Personal/str.h"
+#include "Personal/ztr.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
