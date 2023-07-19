@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Busy</class>
- <widget class="QDialog" name="ProfessionalLife">
+ <widget class="QDialog" name="Busy">
   <property name="geometry">
    <rect>
     <x>0</x>

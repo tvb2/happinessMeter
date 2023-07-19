@@ -14,13 +14,16 @@ Busy::Busy(QWidget *parent) :
 
 //People widgets
     ui->GBPeople->setEnabled(false);
+    //show People group when either RB is selected
+    QObject::connect(ui->RBOccupationFun, &QRadioButton::clicked, this, &Busy::visPeople);
+    QObject::connect(ui->RBRBOccupationNorm, &QRadioButton::clicked, this, &Busy::visPeople);
+    QObject::connect(ui->RBOccupationDull, &QRadioButton::clicked, this, &Busy::visPeople);
 
 //Money widgets
     ui->GBMoney->setEnabled(false);
 
 //buttons
     ui->PBOK->setEnabled(false);
-
 }
 
 Busy::~Busy()
@@ -80,6 +83,10 @@ void Busy::on_radioButton_5_clicked()
 void Busy::on_PBOK_clicked()
 */
 
+void Busy::visPeople(){
+    if (!ui->GBPeople->isEnabled())
+        ui->GBPeople->setEnabled(true);
+}
 void Busy::closeEvent (QCloseEvent *event)
 {
     QMessageBox::StandardButton resBtn = QMessageBox::question(this, "Professional Life",
@@ -91,3 +98,4 @@ void Busy::closeEvent (QCloseEvent *event)
     else
             event->ignore();
 }
+
