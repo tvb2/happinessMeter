@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QCheckBox>
+#include <string>
 
 #include "Professional/busy.h"
 #include "Professional/notbusy.h"
@@ -44,6 +45,8 @@ private slots:
     void on_RBHobbyIsShit_clicked();
 
     void on_PBTell_clicked();
+
+    void on_CBEnoughMoney_stateChanged(int arg1);
 
 private:
     Ui::MainWindow *ui;

@@ -122,12 +122,24 @@ void MainWindow::on_RBHobbyIsShit_clicked()
 
 void MainWindow::on_PBTell_clicked()
 {
-   QMessageBox *message;
+    professional->setRate();
+   std::string persSTR, profSTR, hobbSTR, overallSTR;
+   QMessageBox *message = nullptr;
+
+   profSTR = professional->evaluate();
+
     if (ui->RBOverallHappy->isChecked()){
-        message->information(this,"Your happiness meter...", "You appear to be rather happy! Congrats!");
+        overallSTR = "You appear to be rather happy! Congrats!\n";
     }
     else if (ui->RBOverallNotHappy->isChecked()){
-        message->information(this,"Your happiness meter...", "You appear to be not so happy. Sorry!");
+        overallSTR = "You appear to be not so happy. Sorry!\n";
     }
+    message->information(this,"Your happiness meter...", QString::fromStdString(overallSTR + profSTR));
+}
+
+
+void MainWindow::on_CBEnoughMoney_stateChanged(int arg1)
+{
+    professional->enoughCash(arg1);
 }
 
