@@ -85,7 +85,10 @@ void MainWindow::on_RBProfessionalBusy_clicked()
         ui->GBHobby->setEnabled(true);
 
     Busy *b = new Busy();
-    QObject::connect(b, &Busy::emitSignal, professional, &Professional::setRate);
+//recieve values from Busy dialog into Professional class
+    QObject::connect(b, &Busy::sendOccupation, professional, &Professional::setOccupation);
+    QObject::connect(b, &Busy::sendPeople, professional, &Professional::setPeople);
+    QObject::connect(b, &Busy::sendMoney, professional, &Professional::setMoney);
     b->exec();
 }
 void MainWindow::on_RBProfessionalNotBusy_clicked()

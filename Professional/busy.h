@@ -18,9 +18,10 @@ class Busy : public QDialog
 public:
     explicit Busy(QWidget *parent = nullptr);
     ~Busy();
-    double getRate(){return this->total;}
 signals:
-    void emitSignal(double tot);
+    void sendOccupation(double occ);
+    void sendPeople(double peo);
+    void sendMoney(double mon);
 
 private slots:
 
@@ -45,7 +46,7 @@ private slots:
 private:
     Ui::Busy *ui;
     bool complete{0};
-    double occupation{0}, people{0}, money{0}, total{0};
+    double occupation{0}, people{0}, money{0};
 };
 
 #endif // BUSY_H

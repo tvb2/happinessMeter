@@ -99,8 +99,8 @@ void Busy::keyPressEvent(QKeyEvent *evt)
     QDialog::keyPressEvent(evt);
 }
 void Busy::finalize(){
-    this->total = (occupation + people + money)/3;
-    qDebug() << "professional rating: " << total;
-    emit emitSignal(this->total);
+    emit sendOccupation(this->occupation);
+    emit sendPeople(this->people);
+    emit sendMoney(this->money);
     this->accept();
 }

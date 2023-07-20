@@ -11,11 +11,14 @@ class Professional : public Segment
 public:
     explicit Professional(Segment *parent = nullptr);
 public slots:
-    virtual void setRate(double _val) override;
+    virtual void setRate() override;
+    void setOccupation(double _val);
+    void setPeople(double _val);
+    void setMoney(double _val);
     double getRate(){return this->rate;}
 
 private:
-    double rate{0};
+    double rate{0}, occupation{0}, people{0}, money{0};
 
 };
 
