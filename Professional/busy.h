@@ -20,6 +20,7 @@ public:
     ~Busy();
     double getRate(){return this->total;}
 signals:
+    void emitSignal(double tot);
 
 private slots:
 

@@ -101,5 +101,6 @@ void Busy::keyPressEvent(QKeyEvent *evt)
 void Busy::finalize(){
     this->total = (occupation + people + money)/3;
     qDebug() << "professional rating: " << total;
-    this->close();
+    emit emitSignal(this->total);
+    this->accept();
 }

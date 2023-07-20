@@ -27,7 +27,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 //'Tell me' button
     ui->PBTell->setEnabled(false);
-
+    professional = new Professional();
 }
 
 MainWindow::~MainWindow()
@@ -84,9 +84,9 @@ void MainWindow::on_RBProfessionalBusy_clicked()
     if (!ui->GBHobby->isEnabled())
         ui->GBHobby->setEnabled(true);
 
-    Busy *p = new Busy();
-    //p->show();
-    p->exec();
+    Busy *b = new Busy();
+    QObject::connect(b, &Busy::emitSignal, professional, &Professional::setRate);
+    b->exec();
 }
 void MainWindow::on_RBProfessionalNotBusy_clicked()
 {

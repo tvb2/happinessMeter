@@ -12,6 +12,8 @@
 #include "Personal/str.h"
 #include "Personal/ztr.h"
 
+#include "professional.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -45,5 +47,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    Professional *professional;
 };
 #endif // MAINWINDOW_H

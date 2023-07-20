@@ -9,7 +9,7 @@ class Segment: public QObject
 public:
     explicit Segment(QObject *parent = nullptr);
 public slots:
-    virtual void rateMax() = 0;
+    virtual void setRate(double _val) = 0;
 };
 
 #endif // SEGMENT_H
