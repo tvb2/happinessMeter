@@ -101,14 +101,11 @@ std::string Professional::evaluate(){
             }
         }
     }
-    //0.83 .. 1
     if (this->rate >= 0.83){
         resume.append("Overall is excellent! ");
         if (!this->enoughMoney)
             resume.append(" but also you need to learn to spend less, save more\n");
     }
-
-//detailed summary:
 
     return resume;
 }

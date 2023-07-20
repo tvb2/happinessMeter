@@ -17,7 +17,6 @@ SOURCES += \
         Personal/str.cpp \
         Personal/ztr.cpp \
         Professional/busy.cpp \
-        Professional/notbusy.cpp \
         main.cpp \
         mainwindow.cpp \
         professional.cpp \
@@ -33,7 +32,6 @@ HEADERS += \
         Personal/str.h \
         Personal/ztr.h \
         Professional/busy.h \
-        Professional/notbusy.h \
         mainwindow.h \
         professional.h \
         segment.h
@@ -47,7 +45,6 @@ FORMS += \
     Personal/str.ui \
     Personal/ztr.ui \
     Professional/busy.ui \
-    Professional/notbusy.ui \
     mainwindow.ui
 
 DISTFILES += \

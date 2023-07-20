@@ -96,8 +96,9 @@ void MainWindow::on_RBProfessionalNotBusy_clicked()
     if (!ui->GBHobby->isEnabled())
         ui->GBHobby->setEnabled(true);
 
-    NotBusy *ntbusy = new NotBusy();
-    ntbusy->exec();
+    professional->setOccupation(0.5);
+    professional->setPeople(0.5);
+    professional->setMoney(0.5);
 }
 
 void MainWindow::on_RBHaveHobby_clicked(){
