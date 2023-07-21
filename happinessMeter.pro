@@ -19,6 +19,7 @@ SOURCES += \
         Professional/busy.cpp \
         main.cpp \
         mainwindow.cpp \
+        personal.cpp \
         professional.cpp \
         segment.cpp
 
@@ -33,6 +34,7 @@ HEADERS += \
         Personal/ztr.h \
         Professional/busy.h \
         mainwindow.h \
+        personal.h \
         professional.h \
         segment.h
 

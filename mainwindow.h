@@ -7,13 +7,13 @@
 #include <string>
 
 #include "Professional/busy.h"
-#include "Professional/notbusy.h"
 
 #include "Personal/ltr.h"
 #include "Personal/str.h"
 #include "Personal/ztr.h"
 
 #include "professional.h"
+#include "personal.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -51,5 +51,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
     Professional *professional;
+    Personal *personal;
 };
 #endif // MAINWINDOW_H

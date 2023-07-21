@@ -28,6 +28,7 @@ MainWindow::MainWindow(QWidget *parent)
 //'Tell me' button
     ui->PBTell->setEnabled(false);
     professional = new Professional();
+    personal = new Personal();
 }
 
 MainWindow::~MainWindow()
@@ -55,6 +56,10 @@ void MainWindow::on_RBPersonalLTR_clicked()
         ui->CBEnoughMoney->setEnabled(true);
 
     LTR *ltr = new LTR();
+    //recieve values from LTR dialog into Personal class
+    QObject::connect(ltr, &LTR::sendFirst, personal, &Personal::setFirst);
+    QObject::connect(ltr, &LTR::sendSecond, personal, &Personal::setSecond);
+    QObject::connect(ltr, &LTR::sendThird, personal, &Personal::setThird);
     ltr->exec();
 
 }
@@ -124,10 +129,12 @@ void MainWindow::on_RBHobbyIsShit_clicked()
 void MainWindow::on_PBTell_clicked()
 {
     professional->setRate();
+    personal->setRate();
    std::string persSTR, profSTR, hobbSTR, overallSTR;
    QMessageBox *message = nullptr;
 
    profSTR = professional->evaluate();
+   persSTR = personal->evaluate();
 
     if (ui->RBOverallHappy->isChecked()){
         overallSTR = "You appear to be rather happy! Congrats!\n";
@@ -135,7 +142,7 @@ void MainWindow::on_PBTell_clicked()
     else if (ui->RBOverallNotHappy->isChecked()){
         overallSTR = "You appear to be not so happy. Sorry!\n";
     }
-    message->information(this,"Your happiness meter...", QString::fromStdString(overallSTR + profSTR));
+    message->information(this,"Your happiness meter...", QString::fromStdString(overallSTR + profSTR + persSTR));
 }
 
 
