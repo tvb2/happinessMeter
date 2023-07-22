@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "ui_notbusy.h"
+#include "ui_busy.h"
 #include "ui_ltr.h"
 #include "ui_str.h"
 #include "ui_ztr.h"
@@ -27,6 +28,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 //'Tell me' button
     ui->PBTell->setEnabled(false);
+    std::string temp = "temp";
     professional = new Professional();
     personal = new Personal();
 }
@@ -57,6 +59,7 @@ void MainWindow::on_RBPersonalLTR_clicked()
 
     LTR *ltr = new LTR();
     //recieve values from LTR dialog into Personal class
+    personal->init(ltr->name, ltr->firstGroup, ltr->scndGroup, ltr->thrdGroup);
     QObject::connect(ltr, &LTR::sendFirst, personal, &Personal::setFirst);
     QObject::connect(ltr, &LTR::sendSecond, personal, &Personal::setSecond);
     QObject::connect(ltr, &LTR::sendThird, personal, &Personal::setThird);
@@ -91,19 +94,20 @@ void MainWindow::on_RBProfessionalBusy_clicked()
 
     Busy *b = new Busy();
 //recieve values from Busy dialog into Professional class
-    QObject::connect(b, &Busy::sendOccupation, professional, &Professional::setOccupation);
-    QObject::connect(b, &Busy::sendPeople, professional, &Professional::setPeople);
-    QObject::connect(b, &Busy::sendMoney, professional, &Professional::setMoney);
+    professional->init(b->name, b->firstGroup, b->scndGroup, b->thrdGroup);
+    QObject::connect(b, &Busy::sendOccupation, professional, &Professional::setFirst);
+    QObject::connect(b, &Busy::sendPeople, professional, &Professional::setSecond);
+    QObject::connect(b, &Busy::sendMoney, professional, &Professional::setThird);
     b->exec();
 }
 void MainWindow::on_RBProfessionalNotBusy_clicked()
 {
     if (!ui->GBHobby->isEnabled())
         ui->GBHobby->setEnabled(true);
-
-    professional->setOccupation(0.5);
-    professional->setPeople(0.5);
-    professional->setMoney(0.5);
+    
+    professional->setFirst(0.5);
+    professional->setSecond(0.5);
+    professional->setThird(0.5);
 }
 
 void MainWindow::on_RBHaveHobby_clicked(){

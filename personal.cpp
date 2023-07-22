@@ -5,11 +5,6 @@ Personal::Personal(Segment *parent): Segment(parent)
 
 }
 
-void Personal::setRate(){
-    this->rate = (this->first + this->second+ this->third)/3;
-    qDebug() << "total of Professional class: " << this->rate;
-}
-
 std::string Personal::evaluate(){
     std::string resume = "Professiona life: ";
 //overall
@@ -78,18 +73,5 @@ std::string Personal::evaluate(){
         resume.append("Overall is excellent! ");
     }
     return resume;
-}
-
-void Personal::setFirst(double _val){
-    this->first = _val;
-    qDebug() << "personal class partner: " << this->first;
-}
-void Personal::setSecond(double _val){
-    this->second = _val;
-    qDebug() << "personal class family: " << this->second;
-}
-void Personal::setThird(double _val){
-    this->third = _val;
-    qDebug() << "personal class friends: " << this->third;
 }
 

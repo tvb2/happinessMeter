@@ -6,6 +6,7 @@
 #include <QKeyEvent>
 #include <QMessageBox>
 #include <QDebug>
+#include <string>
 
 namespace Ui {
 class Busy;
@@ -18,6 +19,12 @@ class Busy : public QDialog
 public:
     explicit Busy(QWidget *parent = nullptr);
     ~Busy();
+    std::string name = "Professionally busy";
+    std::string firstGroup = "Occupation";
+    std::string scndGroup =  "People";
+    std::string thrdGroup = "Money";
+
+
 signals:
     void sendOccupation(double occ);
     void sendPeople(double peo);

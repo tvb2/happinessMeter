@@ -11,11 +11,7 @@ class Personal : public Segment
 public:
     explicit Personal(Segment *parent = nullptr);
 public slots:
-    virtual void setRate() override;
     virtual std::string evaluate() override;
-    void setFirst(double _val);
-    void setSecond(double _val);
-    void setThird(double _val);
 
 private:
     double rate{0}, first{0}, second{0}, third{0};
