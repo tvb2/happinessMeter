@@ -57,13 +57,13 @@ void MainWindow::on_RBPersonalLTR_clicked()
     if (!ui->CBEnoughMoney->isEnabled())
         ui->CBEnoughMoney->setEnabled(true);
 
-    LTR *ltr = new LTR();
+    LTR *relations = new LTR();
     //recieve values from LTR dialog into Personal class
-    personal->init(ltr->name, ltr->firstGroup, ltr->scndGroup, ltr->thrdGroup);
-    QObject::connect(ltr, &LTR::sendFirst, personal, &Personal::setFirst);
-    QObject::connect(ltr, &LTR::sendSecond, personal, &Personal::setSecond);
-    QObject::connect(ltr, &LTR::sendThird, personal, &Personal::setThird);
-    ltr->exec();
+    personal->init(relations->name, relations->firstGroup, relations->scndGroup, relations->thrdGroup);
+    QObject::connect(relations, &LTR::sendFirst, personal, &Personal::setFirst);
+    QObject::connect(relations, &LTR::sendSecond, personal, &Personal::setSecond);
+    QObject::connect(relations, &LTR::sendThird, personal, &Personal::setThird);
+    relations->exec();
 
 }
 void MainWindow::on_RBPersonalSometimes_clicked()
@@ -73,8 +73,13 @@ void MainWindow::on_RBPersonalSometimes_clicked()
     if (!ui->CBEnoughMoney->isEnabled())
         ui->CBEnoughMoney->setEnabled(true);
 
-    STR *str = new STR();
-    str->exec();
+    STR *relations = new STR();
+    //recieve values from LTR dialog into Personal class
+    personal->init(relations->name, relations->firstGroup, relations->scndGroup, relations->thrdGroup);
+    QObject::connect(relations, &STR::sendFirst, personal, &Personal::setFirst);
+    QObject::connect(relations, &STR::sendSecond, personal, &Personal::setSecond);
+    QObject::connect(relations, &STR::sendThird, personal, &Personal::setThird);
+    relations->exec();
 }
 void MainWindow::on_RBPersonalhate_clicked()
 {

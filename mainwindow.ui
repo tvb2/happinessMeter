@@ -64,14 +64,14 @@
          <item>
           <widget class="QRadioButton" name="RBPersonalLTR">
            <property name="text">
-            <string>I am currently in long-term relations</string>
+            <string>I am in relations</string>
            </property>
           </widget>
          </item>
          <item>
           <widget class="QRadioButton" name="RBPersonalSometimes">
            <property name="text">
-            <string>I sometimes have relations</string>
+            <string>I am not in relations right now</string>
            </property>
           </widget>
          </item>

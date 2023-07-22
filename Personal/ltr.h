@@ -17,9 +17,9 @@ public:
     explicit LTR(QWidget *parent = nullptr);
     ~LTR();
     std::string name = "Relations ";
-    std::string firstGroup = "Partner";
-    std::string scndGroup =  "Family";
-    std::string thrdGroup = "Friends";
+    std::string firstGroup = "Family";
+    std::string scndGroup =  "Friends";
+    std::string thrdGroup = "Partner";
 signals:
     void sendFirst(double fst);
     void sendSecond(double scnd);
@@ -28,7 +28,7 @@ signals:
 private slots:
 
     //option selected in the first group
-    void firstSet();
+    void frstSet();
 
     //option selected in the second group
     void scndSet();

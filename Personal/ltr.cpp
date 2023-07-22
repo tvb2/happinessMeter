@@ -9,25 +9,24 @@ LTR::LTR(QWidget *parent) :
     //initially widgets are not visible
 
     //First widgets
+    ui->GBFriends->setEnabled(false);
     //show Second group when either RB is selected
-    ui->GBFamily->setEnabled(false);
-    QObject::connect(ui->RBPartnerExc, &QRadioButton::clicked, this, &LTR::firstSet);
-    QObject::connect(ui->RBPartnerNorm, &QRadioButton::clicked, this, &LTR::firstSet);
-    QObject::connect(ui->RBPartnerBad, &QRadioButton::clicked, this, &LTR::firstSet);
-
+    QObject::connect(ui->RBFamilyExc,  &QRadioButton::clicked, this,  &LTR::frstSet);
+    QObject::connect(ui->RBFamilyNorm, &QRadioButton::clicked, this,  &LTR::frstSet);
+    QObject::connect(ui->RBFamilyBad,  &QRadioButton::clicked, this,  &LTR::frstSet);
 
     //Second widgets
-    ui->GBFriends->setEnabled(false);
-    QObject::connect(ui->RBFamilyExc, &QRadioButton::clicked, this, &LTR::scndSet);
-    QObject::connect(ui->RBFamilyNorm, &QRadioButton::clicked, this, &LTR::scndSet);
-    QObject::connect(ui->RBFamilyBad, &QRadioButton::clicked, this, &LTR::scndSet);
+    ui->GBPartner->setEnabled(false);
+    QObject::connect(ui->RBFriendsExc,  &QRadioButton::clicked, this, &LTR::scndSet);
+    QObject::connect(ui->RBFriendsNorm, &QRadioButton::clicked, this, &LTR::scndSet);
+    QObject::connect(ui->RBFriendsBad,  &QRadioButton::clicked, this, &LTR::scndSet);
 
     //buttons
     ui->PBOK->setEnabled(false);
-    QObject::connect(ui->RBFriendsExc, &QRadioButton::clicked, this, &LTR::thrdSet);
-    QObject::connect(ui->RBFriendsNorm, &QRadioButton::clicked, this, &LTR::thrdSet);
-    QObject::connect(ui->RBFriendsBad, &QRadioButton::clicked, this, &LTR::thrdSet);
-    QObject::connect(ui->PBOK, &QPushButton::clicked, this, &LTR::finalize);
+    QObject::connect(ui->RBPartnerExc,  &QRadioButton::clicked, this, &LTR::thrdSet);
+    QObject::connect(ui->RBPartnerNorm, &QRadioButton::clicked, this, &LTR::thrdSet);
+    QObject::connect(ui->RBPartnerBad,  &QRadioButton::clicked, this, &LTR::thrdSet);
+    QObject::connect(ui->PBOK,          &QPushButton::clicked,  this, &LTR::finalize);
 }
 
 LTR::~LTR()
@@ -35,30 +34,30 @@ LTR::~LTR()
     delete ui;
 }
 
-void LTR::firstSet(){
+void LTR::frstSet(){
     //make available the next section
-    if (!ui->GBFamily->isEnabled())
-        ui->GBFamily->setEnabled(true);
-
-    //set rating based on selection
-    if (ui->RBPartnerExc->isChecked())
-        this->first = 1;
-    if (ui->RBPartnerExc->isChecked())
-        this->first = 0.5;
-    if (ui->RBPartnerBad->isChecked())
-        this->first= 0;
-}
-void LTR::scndSet(){
-//make available the next section
     if (!ui->GBFriends->isEnabled())
         ui->GBFriends->setEnabled(true);
 
-//set rating based on selection
+    //set rating based on selection
     if (ui->RBFamilyExc->isChecked())
+        this->first = 1;
+    if (ui->RBFamilyNorm->isChecked())
+        this->first = 0.5;
+    if (ui->RBFamilyBad->isChecked())
+        this->first= 0;
+}
+void LTR::scndSet(){
+    //make available the next section
+    if (!ui->GBPartner->isEnabled())
+        ui->GBPartner->setEnabled(true);
+
+    //set rating based on selection
+    if (ui->RBFriendsExc->isChecked())
         this->second = 1;
-    if (ui->RBFamilyExc->isChecked())
+    if (ui->RBFriendsNorm->isChecked())
         this->second = 0.5;
-    if (ui->RBFamilyExc->isChecked())
+    if (ui->RBFriendsBad->isChecked())
         this->second= 0;
 }
 void LTR::thrdSet(){
@@ -67,11 +66,11 @@ void LTR::thrdSet(){
         ui->PBOK->setEnabled(true);
 
 //set rating based on selection
-    if (ui->RBFriendsExc->isChecked())
+    if (ui->RBPartnerExc->isChecked())
         this->third = 1;
-    if (ui->RBFriendsNorm->isChecked())
+    if (ui->RBPartnerNorm->isChecked())
         this->third = 0.5;
-    if (ui->RBFriendsBad->isChecked())
+    if (ui->RBPartnerNorm->isChecked())
         this->third= 0;
 //flag to report that all options have been set
     this->complete = true;
