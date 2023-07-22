@@ -4,7 +4,6 @@
 #include "ui_busy.h"
 #include "ui_ltr.h"
 #include "ui_str.h"
-#include "ui_ztr.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -80,16 +79,6 @@ void MainWindow::on_RBPersonalSometimes_clicked()
     QObject::connect(relations, &STR::sendSecond, personal, &Personal::setSecond);
     QObject::connect(relations, &STR::sendThird, personal, &Personal::setThird);
     relations->exec();
-}
-void MainWindow::on_RBPersonalhate_clicked()
-{
-    if (!ui->GBProfessionalLife->isEnabled())
-        ui->GBProfessionalLife->setEnabled(true);
-    if (!ui->CBEnoughMoney->isEnabled())
-        ui->CBEnoughMoney->setEnabled(true);
-
-    ZTR *ztr = new ZTR();
-    ztr->exec();
 }
 
 void MainWindow::on_RBProfessionalBusy_clicked()

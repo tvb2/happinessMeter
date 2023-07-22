@@ -75,13 +75,6 @@
            </property>
           </widget>
          </item>
-         <item>
-          <widget class="QRadioButton" name="RBPersonalhate">
-           <property name="text">
-            <string>I hate relations</string>
-           </property>
-          </widget>
-         </item>
         </layout>
        </widget>
       </item>

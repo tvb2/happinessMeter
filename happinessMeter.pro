@@ -15,7 +15,6 @@ SOURCES += \
         Hobby/hobbyyes.cpp \
         Personal/ltr.cpp \
         Personal/str.cpp \
-        Personal/ztr.cpp \
         Professional/busy.cpp \
         main.cpp \
         mainwindow.cpp \
@@ -31,7 +30,6 @@ HEADERS += \
         Hobby/hobbyyes.h \
         Personal/ltr.h \
         Personal/str.h \
-        Personal/ztr.h \
         Professional/busy.h \
         mainwindow.h \
         personal.h \
@@ -45,7 +43,6 @@ FORMS += \
     Hobby/hobbyyes.ui \
     Personal/ltr.ui \
     Personal/str.ui \
-    Personal/ztr.ui \
     Professional/busy.ui \
     mainwindow.ui
 
