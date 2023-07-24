@@ -182,8 +182,8 @@ void MainWindow::on_PBTell_clicked()
    std::string persSTR, profSTR, hobbSTR, overallSTR;
    QMessageBox *message = nullptr;
 
-   profSTR = professional->evaluate();
    persSTR = personal->evaluate();
+   profSTR = professional->evaluate();
 
     if (ui->RBOverallHappy->isChecked()){
         overallSTR = "You appear to be rather happy! Congrats!\n";
@@ -191,7 +191,11 @@ void MainWindow::on_PBTell_clicked()
     else if (ui->RBOverallNotHappy->isChecked()){
         overallSTR = "You appear to be not so happy. Sorry!\n";
     }
-    message->information(this,"Your happiness meter...", QString::fromStdString(overallSTR + profSTR + persSTR));
+    message->information(this,"Your happiness meter...", QString::fromStdString(
+                                                              overallSTR +
+                                                              persSTR +
+                                                              profSTR
+                                                                                 ));
 }
 
 

@@ -15,9 +15,7 @@ public slots:
     void enoughCash(int flag);
 
 private:
-    double rate{0}, first{0}, second{0}, third{0};
     bool enoughMoney{0};
-    double epsilon = 0.01;
 
 };
 
