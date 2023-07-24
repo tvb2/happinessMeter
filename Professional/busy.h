@@ -19,7 +19,7 @@ class Busy : public QDialog
 public:
     explicit Busy(QWidget *parent = nullptr);
     ~Busy();
-    std::string name = "Professionally busy";
+    std::string name = "Professional";
     std::string firstGroup = "Occupation";
     std::string scndGroup =  "People";
     std::string thrdGroup = "Money";

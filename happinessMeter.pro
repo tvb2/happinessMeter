@@ -11,11 +11,13 @@ CONFIG += c++17
 SOURCES += \
         Hobby/hobbycrap.cpp \
         Hobby/hobbyno.cpp \
-        Hobby/hobbywork.cpp \
         Hobby/hobbyyes.cpp \
         Personal/ltr.cpp \
         Personal/str.cpp \
         Professional/busy.cpp \
+        Health/healthexc.cpp \
+        health.cpp \
+        hobby.cpp \
         main.cpp \
         mainwindow.cpp \
         personal.cpp \
@@ -26,11 +28,13 @@ SOURCES += \
 HEADERS += \
         Hobby/hobbycrap.h \
         Hobby/hobbyno.h \
-        Hobby/hobbywork.h \
         Hobby/hobbyyes.h \
         Personal/ltr.h \
         Personal/str.h \
         Professional/busy.h \
+        Health/healthexc.h \
+        health.h \
+        hobby.h \
         mainwindow.h \
         personal.h \
         professional.h \
@@ -39,11 +43,11 @@ HEADERS += \
 FORMS += \
     Hobby/hobbycrap.ui \
     Hobby/hobbyno.ui \
-    Hobby/hobbywork.ui \
     Hobby/hobbyyes.ui \
     Personal/ltr.ui \
     Personal/str.ui \
     Professional/busy.ui \
+    Health/healthexc.ui \
     mainwindow.ui
 
 DISTFILES += \

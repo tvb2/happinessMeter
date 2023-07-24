@@ -1,9 +1,9 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "ui_notbusy.h"
 #include "ui_busy.h"
 #include "ui_ltr.h"
 #include "ui_str.h"
+#include "ui_healthexc.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -25,11 +25,15 @@ MainWindow::MainWindow(QWidget *parent)
 //hobby widgets
     ui->GBHobby->setEnabled(false);
 
+//health widgets
+    ui->GBHealth->setEnabled(false);
+
 //'Tell me' button
     ui->PBTell->setEnabled(false);
-    std::string temp = "temp";
     professional = new Professional();
     personal = new Personal();
+    hobby = new Hobby();
+    health = new Health();
 }
 
 MainWindow::~MainWindow()
@@ -98,30 +102,77 @@ void MainWindow::on_RBProfessionalNotBusy_clicked()
 {
     if (!ui->GBHobby->isEnabled())
         ui->GBHobby->setEnabled(true);
-    
+    Busy *b = new Busy();
+    professional->init(b->name, b->firstGroup, b->scndGroup, b->thrdGroup);
     professional->setFirst(0.5);
     professional->setSecond(0.5);
     professional->setThird(0.5);
 }
 
-void MainWindow::on_RBHaveHobby_clicked(){
-    if (!ui->PBTell->isEnabled())
-        ui->PBTell->setEnabled(true);
+void MainWindow::on_CBEnoughMoney_stateChanged(int arg1)
+{
+    professional->enoughCash(arg1);
 }
-void MainWindow::on_RBNoHobby_clicked()
+
+void MainWindow::on_RBHobbyExc_clicked(){
+    if (!ui->GBHealth->isEnabled())
+        ui->GBHealth->setEnabled(true);
+    HobbyYes *h = new HobbyYes();
+    hobby->init(h->name, h->firstGroup, h->scndGroup, h->thrdGroup);
+    hobby->setFirst(1);
+    hobby->setSecond(1);
+    hobby->setThird(1);
+}
+void MainWindow::on_RBHobbyNorm_clicked()
+{
+    if (!ui->GBHealth->isEnabled())
+        ui->GBHealth->setEnabled(true);
+    HobbyYes *h = new HobbyYes();
+    hobby->init(h->name, h->firstGroup, h->scndGroup, h->thrdGroup);
+    hobby->setFirst(0.5);
+    hobby->setSecond(0.5);
+    hobby->setThird(0.5);
+}
+void MainWindow::on_RBHobbyBad_clicked()
+{
+    if (!ui->GBHealth->isEnabled())
+        ui->GBHealth->setEnabled(true);
+    HobbyYes *h = new HobbyYes();
+    hobby->init(h->name, h->firstGroup, h->scndGroup, h->thrdGroup);
+    hobby->setFirst(0);
+    hobby->setSecond(0);
+    hobby->setThird(0);
+}
+
+void MainWindow::on_RBHealthExc_clicked()
 {
     if (!ui->PBTell->isEnabled())
         ui->PBTell->setEnabled(true);
+    HealthExc *h = new HealthExc();
+    health->init(h->name, h->firstGroup, h->scndGroup, h->thrdGroup);
+    health->setFirst(1);
+    health->setSecond(1);
+    health->setThird(1);
 }
-void MainWindow::on_RBHobbyIsWork_clicked()
+void MainWindow::on_RBHealthNorm_clicked()
 {
     if (!ui->PBTell->isEnabled())
         ui->PBTell->setEnabled(true);
+    HealthExc *h = new HealthExc();
+    health->init(h->name, h->firstGroup, h->scndGroup, h->thrdGroup);
+    health->setFirst(0.5);
+    health->setSecond(0.5);
+    health->setThird(0.5);
 }
-void MainWindow::on_RBHobbyIsShit_clicked()
+void MainWindow::on_RBHealthBad_clicked()
 {
     if (!ui->PBTell->isEnabled())
         ui->PBTell->setEnabled(true);
+    HealthExc *h = new HealthExc();
+    health->init(h->name, h->firstGroup, h->scndGroup, h->thrdGroup);
+    health->setFirst(0);
+    health->setSecond(0);
+    health->setThird(0);
 }
 
 void MainWindow::on_PBTell_clicked()
@@ -143,9 +194,4 @@ void MainWindow::on_PBTell_clicked()
     message->information(this,"Your happiness meter...", QString::fromStdString(overallSTR + profSTR + persSTR));
 }
 
-
-void MainWindow::on_CBEnoughMoney_stateChanged(int arg1)
-{
-    professional->enoughCash(arg1);
-}
 

@@ -1,17 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>HobbyWork</class>
- <widget class="QDialog" name="HobbyWork">
+ <class>HealthExc</class>
+ <widget class="QDialog" name="HealthExc">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>385</width>
-    <height>654</height>
+    <width>400</width>
+    <height>300</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Work is hobby</string>
+   <string>Dialog</string>
   </property>
  </widget>
  <resources/>

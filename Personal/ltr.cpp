@@ -70,7 +70,7 @@ void LTR::thrdSet(){
         this->third = 1;
     if (ui->RBPartnerNorm->isChecked())
         this->third = 0.5;
-    if (ui->RBPartnerNorm->isChecked())
+    if (ui->RBPartnerBad->isChecked())
         this->third= 0;
 //flag to report that all options have been set
     this->complete = true;

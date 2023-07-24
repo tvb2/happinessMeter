@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>385</width>
-    <height>654</height>
+    <height>729</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -27,7 +27,7 @@
     <item row="0" column="0">
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QGroupBox" name="groupBox">
+       <widget class="QGroupBox" name="GBOverall">
         <property name="title">
          <string>Overall</string>
         </property>
@@ -125,74 +125,103 @@
         <property name="checked">
          <bool>false</bool>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout_4">
-         <item>
-          <widget class="QRadioButton" name="RBHaveHobby">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="2" column="0">
+          <widget class="QRadioButton" name="RBHobbyBad">
            <property name="text">
-            <string>I have a hobby</string>
+            <string>I do not have time to do what I like</string>
            </property>
           </widget>
          </item>
-         <item>
-          <widget class="QRadioButton" name="RBNoHobby">
+         <item row="0" column="0">
+          <widget class="QRadioButton" name="RBHobbyExc">
            <property name="text">
-            <string>I do not have a hobby</string>
+            <string>I am spending lots of time on my hobby</string>
            </property>
           </widget>
          </item>
-         <item>
-          <widget class="QRadioButton" name="RBHobbyIsWork">
+         <item row="1" column="0">
+          <widget class="QRadioButton" name="RBHobbyNorm">
            <property name="text">
-            <string>My work is my hobby</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QRadioButton" name="RBHobbyIsShit">
-           <property name="text">
-            <string>I do not have time for this shit</string>
+            <string>I wish I had more time to sepnd on my hobby</string>
            </property>
           </widget>
          </item>
         </layout>
        </widget>
       </item>
-     </layout>
-    </item>
-    <item row="1" column="0">
-     <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+       <widget class="QGroupBox" name="GBHealth">
+        <property name="title">
+         <string>Body/health</string>
         </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
+        <property name="checkable">
+         <bool>false</bool>
         </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="PBTell">
-        <property name="text">
-         <string>Tell me!</string>
+        <property name="checked">
+         <bool>false</bool>
         </property>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QRadioButton" name="RBHealthExc">
+           <property name="text">
+            <string>I feel young, strong and beautiful</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="RBHealthNorm">
+           <property name="text">
+            <string>I wish I spent more time on body and health</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="RBHealthBad">
+           <property name="text">
+            <string>I am not happy they way I look</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </item>
       <item>
-       <spacer name="horizontalSpacer_2">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="PBTell">
+          <property name="text">
+           <string>Tell me!</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
       </item>
      </layout>
     </item>
