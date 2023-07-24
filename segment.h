@@ -20,6 +20,7 @@ public slots:
     virtual void setFirst(double _val);
     virtual void setSecond(double _val);
     virtual void setThird(double _val);
+    virtual double getRate();
 protected:
     double rate{0}, first{0}, second{0}, third{0};
     double epsilon = 0.01;

@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "ui_disclaimer.h"
 #include "ui_mainwindow.h"
 #include "ui_busy.h"
 #include "ui_ltr.h"
@@ -10,7 +11,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
+        Disclaimer *disclaimer = new Disclaimer();
+        disclaimer->exec();
 //initially widgets are not visible
 
 //Overall
@@ -175,6 +177,50 @@ void MainWindow::on_RBHealthBad_clicked()
     health->setThird(0);
 }
 
+std::string MainWindow::overallRate(){
+    std::string resume = "Hm.. something went wrong, please report error #1 to the developer..";
+    overall = (
+        personal->getRate() +
+        professional->getRate()+
+        hobby->getRate() +
+        health->getRate()
+               )/this->numOfSegments;
+    qDebug() << "overall rate: " << this->overall;
+    if (overall < 0.5){
+        if (ui->RBOverallHappy->isChecked()){
+            return "You are feeling happy and this is very good, but it looks like you are a bit too much optimistic :-)";
+        }
+        else{
+            return "You do not feel happy, which is not good, but there are reasons for it, please see details below.";
+        }
+    }
+    if (overall == 0.5){
+        if (ui->RBOverallHappy->isChecked()){
+            return "You are feeling happy! Congrats! You appear to be a moderate optimist!";
+        }
+        else{
+            return "You don't feel happy and there are reasons for that. You appear to be a moderate pessimist!";
+        }
+    }
+    else if((overall > 0.5) && (overall < 0.75)){
+        if (ui->RBOverallHappy->isChecked()){
+            return "You are feeling happy! Congrats!";
+        }
+        else{
+            return "You are feeling unhappy, sorry about that. You appear to be a pessimist!";
+        }
+    }
+    else if (overall >= 0.75){
+        if (ui->RBOverallHappy->isChecked()){
+            return "You are feeling happy! Congrats!";
+        }
+        else{
+            return "You are feeling unhappy?! You appear to be a real pessimist!";
+        }
+    }
+    return resume;
+}
+
 void MainWindow::on_PBTell_clicked()
 {
     professional->setRate();
@@ -188,13 +234,7 @@ void MainWindow::on_PBTell_clicked()
    profSTR = professional->evaluate();
    hobbySTR = hobby->evaluate();
    healthSTR = health->evaluate();
-
-    if (ui->RBOverallHappy->isChecked()){
-        overallSTR = "You appear to be rather happy! Congrats!\n";
-    }
-    else if (ui->RBOverallNotHappy->isChecked()){
-        overallSTR = "You appear to be not so happy. Sorry!\n";
-    }
+   overallSTR = overallRate();
     message->information(this,"Your happiness meter...", QString::fromStdString(
                                                               overallSTR +
                                                               persSTR +

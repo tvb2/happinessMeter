@@ -29,3 +29,4 @@ void Segment::setThird(double _val){
     this->third = _val;
     qDebug() << this->name << " " << this->thrd << ": " << this->third;
 }
+double Segment::getRate(){return this->rate;}

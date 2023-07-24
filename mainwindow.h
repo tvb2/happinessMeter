@@ -16,6 +16,8 @@
 
 #include "Health/healthexc.h"
 
+#include "disclaimer.h"
+
 #include "professional.h"
 #include "personal.h"
 #include "hobby.h"
@@ -32,6 +34,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    std::string overallRate();
 
 private slots:
 
@@ -60,6 +63,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    double overall{0};
+    int numOfSegments = 4;
     Professional *professional;
     Personal *personal;
     Hobby *hobby;

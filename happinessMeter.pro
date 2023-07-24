@@ -16,6 +16,7 @@ SOURCES += \
         Personal/str.cpp \
         Professional/busy.cpp \
         Health/healthexc.cpp \
+        disclaimer.cpp \
         health.cpp \
         hobby.cpp \
         main.cpp \
@@ -33,6 +34,7 @@ HEADERS += \
         Personal/str.h \
         Professional/busy.h \
         Health/healthexc.h \
+        disclaimer.h \
         health.h \
         hobby.h \
         mainwindow.h \
@@ -48,6 +50,7 @@ FORMS += \
     Personal/str.ui \
     Professional/busy.ui \
     Health/healthexc.ui \
+    disclaimer.ui \
     mainwindow.ui
 
 DISTFILES += \

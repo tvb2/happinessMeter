@@ -13,42 +13,34 @@ std::string Professional::evaluate(){
         resume.append("\n\tOverall is bad.\n\t");
     //0 .. 0.16 (0 - 0 - 0)
         if (rate < 0.16){
-            resume.append("You should consider completely changing your occupation,");
+            resume.append("\tYou should consider completely changing your occupation.\n");
             if (this->enoughMoney)
-                resume.append(" also because money may not be with you forever too...\n");
-            else
-                resume.append(" for sure\n");
+                resume.append("\tYour money may not be with you forever too...\n");
         }
     //0.16 .. 0.33 (0 - 0.5 - 0)
         if (rate >= 0.16 && rate < 0.33){
-            resume.append("You should consider completely changing your occupation,");
+            resume.append("\tYou should consider completely changing your occupation\n");
             if (abs(third - 0.5) < epsilon){
                 if (this->enoughMoney)
-                    resume.append(" there are things that matter not less than money too...\n");
-                else
-                    resume.append(" for sure\n");
+                    resume.append("\tThere are things that matter not less than money too...\n");
             }
             else{
                 if (this->enoughMoney)
-                    resume.append(" also because money may not be with you forever too...\n");
-                else
-                    resume.append(" for sure\n");
+                    resume.append("\tAlso because money may not be with you forever too...\n");
             }
         }
     //0.33 .. 0.5 (0 - 0.5 - 0.5 OR 1 - 0 - 0)
         if (rate >= 0.33 && rate < 0.5){
-            resume.append("You should consider completely changing your occupation,");
+            resume.append("\tYou should consider completely changing your occupation.\n");
             if (third > 0.49){
                 if (this->enoughMoney)
-                    resume.append(" there are things that matter not less than money too...\n");
+                    resume.append("\tThere are things that matter not less than money too...\n");
                 else
-                    resume.append(" and also you need to learn to spend less, save more\n");
+                    resume.append("\tYou need to learn to spend less, save more\n");
             }
             else{
                 if (this->enoughMoney)
-                    resume.append(" also because money may not be with you forever too...\n");
-                else
-                    resume.append(" for sure\n");
+                    resume.append("\tBecause money may not be with you forever too...\n");
             }
         }
     }
@@ -59,42 +51,38 @@ std::string Professional::evaluate(){
         if (rate < 0.6){
             if (first == 0 || second == 0 || third == 0){
                 if (first == 0)
-                    resume.append(" But boring work will not make you happy. Can you change your attitude or slightly vary the tasks you do? Otherwise change your job\n");
+                    resume.append("\tBut boring work will not make you happy. Can you change your attitude or slightly vary the tasks you do? Otherwise change your job\n");
                 if (second == 0)
-                    resume.append(" But where is the problem? In people around or in yourself? If you can't change either, you better change your job..\n");
+                    resume.append("\tBut where is the problem? In people around or in yourself? If you can't change either, you better change your job..\n");
                 if (third == 0){
-                    resume.append(" But money matters in this life, for sure. It is important to receive fair compensation for your work");
+                    resume.append("\tBut money matters in this life, for sure. It is important to receive fair compensation for your work\n");
                     if (this->enoughMoney)
-                        resume.append(" also because money may not be with you forever too...\n");
-                    else
-                        resume.append(".\n");
+                        resume.append("\tAlso because money may not be with you forever too...\n");
                 }
                 else
                     if (!this->enoughMoney)
-                    resume.append(" and also you need to learn to spend less, save more\n");
+                    resume.append("\tYou need to learn to spend less, save more\n");
             }
             else
                 if (!this->enoughMoney)
-                    resume.append(" and also you need to learn to spend less, save more\n");
+                    resume.append("\tYou need to learn to spend less, save more\n");
         }
     //0.66 .. 0.83 (0.5 – 0.5 – 1 OR 1 – 1 – 0)
         if (rate >= 0.6 && rate < 0.83){
             if (first == 0 || second == 0 || third == 0){
                 if (first == 0)
-                    resume.append(" But boring work will not make you happy. Can you change your attitude or slightly vary the tasks you do? Otherwise change your job\n");
+                    resume.append("\tBut boring work will not make you happy. Can you change your attitude or slightly vary the tasks you do? Otherwise change your job\n");
                 if (second == 0)
-                    resume.append(" But where is the problem? In people around or in yourself? If you can't change either, you better change your job..\n");
+                    resume.append("\tBut where is the problem? In people around or in yourself? If you can't change either, you better change your job..\n");
                 if (third == 0){
-                    resume.append(" But money matters in this life, for sure. It is important to receive fair compensation for your work");
+                    resume.append("\tBut money matters in this life, for sure. It is important to receive fair compensation for your work\n");
                     if (this->enoughMoney)
-                        resume.append(" also because money may not be with you forever too...\n");
-                    else
-                        resume.append(".\n");
+                        resume.append("\tAlso because money may not be with you forever too...\n");
                 }
             }
             else{
                 if (!this->enoughMoney)
-                    resume.append(" but also you need to learn to spend less, save more\n");
+                    resume.append("\tYou need to learn to spend less, save more\n");
             }
         }
     }
@@ -102,7 +90,7 @@ std::string Professional::evaluate(){
     if (rate >= 0.83){
         resume.append("\n\tOverall is excellent!\n\t");
         if (!this->enoughMoney)
-            resume.append(" but also you need to learn to spend less, save more\n");
+            resume.append("\tYou need to learn to spend less, save more\n");
     }
 
     return resume;
