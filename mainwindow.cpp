@@ -178,47 +178,49 @@ void MainWindow::on_RBHealthBad_clicked()
 }
 
 std::string MainWindow::overallRate(){
-    std::string resume = "Hm.. something went wrong, please report error #1 to the developer..";
+    std::string resume = " ";
     overall = (
         personal->getRate() +
         professional->getRate()+
         hobby->getRate() +
         health->getRate()
                )/this->numOfSegments;
-    qDebug() << "overall rate: " << this->overall;
+    int percent = overall*100;
+    resume = "Your happiness meter is at " + std::to_string(percent) + "%";
+    qDebug() << "overall rate: " << this->overall << resume;
     if (overall < 0.5){
         if (ui->RBOverallHappy->isChecked()){
-            return "You are feeling happy and this is very good, but it looks like you are a bit too much optimistic :-)";
+            return "You are feeling happy and this is very good, but it looks like you are a bit too much optimistic :-)" + resume;
         }
         else{
-            return "You do not feel happy, which is not good, but there are reasons for it, please see details below.";
+            return "You do not feel happy, which is not good, but there are reasons for it, please see details below." + resume;
         }
     }
     if (overall == 0.5){
         if (ui->RBOverallHappy->isChecked()){
-            return "You are feeling happy! Congrats! You appear to be a moderate optimist!";
+            return "You are feeling happy! Congrats! You appear to be a moderate optimist!" + resume;
         }
         else{
-            return "You don't feel happy and there are reasons for that. You appear to be a moderate pessimist!";
+            return "You don't feel happy and there are reasons for that. You appear to be a moderate pessimist!" + resume;
         }
     }
     else if((overall > 0.5) && (overall < 0.75)){
         if (ui->RBOverallHappy->isChecked()){
-            return "You are feeling happy! Congrats!";
+            return "You are feeling happy! Congrats!" + resume;
         }
         else{
-            return "You are feeling unhappy, sorry about that. You appear to be a pessimist!";
+            return "You are feeling unhappy, sorry about that. You appear to be a pessimist!" + resume;
         }
     }
     else if (overall >= 0.75){
         if (ui->RBOverallHappy->isChecked()){
-            return "You are feeling happy! Congrats!";
+            return "You are feeling happy! Congrats!" + resume;
         }
         else{
-            return "You are feeling unhappy?! You appear to be a real pessimist!";
+            return "You are feeling unhappy?! You appear to be a real pessimist!" + resume;
         }
     }
-    return resume;
+    return "Hm.. something went wrong, please report error #1 to the developer..";
 }
 
 void MainWindow::on_PBTell_clicked()
