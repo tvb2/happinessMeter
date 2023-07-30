@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>happinessMeter_en_EN.qm</file>
+        <file>happinessMeter_ru_RU.qm</file>
+    </qresource>
+</RCC>
