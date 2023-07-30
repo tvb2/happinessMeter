@@ -78,7 +78,7 @@ void LTR::thrdSet(){
 void LTR::closeEvent (QCloseEvent *event){
     if (!this->complete){
         QMessageBox::StandardButton resBtn = QMessageBox::question(this, tr("Personal Life"),
-                                                                   tr("Please select at least one option in each group\n"),
+                                                                   tr("Please select one option in each group\n"),
                                                                    QMessageBox::Ok | QMessageBox::NoButton, QMessageBox::Ok);
         event->ignore();
     }

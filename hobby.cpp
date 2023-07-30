@@ -10,7 +10,7 @@ Hobby::Hobby(Segment *parent): Segment(parent)
                    tr("Overall is bad!"));
 }
 QString Hobby::evaluate(){
-    QString resume = "\n" + name;
+    QString resume = name + "\n";
     //overall
 //0..0.5
     if (rate >= 0 && rate < 0.5){
