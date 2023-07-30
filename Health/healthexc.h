@@ -14,10 +14,10 @@ class HealthExc : public QDialog
 public:
     explicit HealthExc(QWidget *parent = nullptr);
     ~HealthExc();
-    std::string name = "Health";
-    std::string firstGroup = "Health first";
-    std::string scndGroup =  "Health second";
-    std::string thrdGroup = "Health third";
+    QString name        = tr("Health");
+    QString firstGroup  = tr("Health first");
+    QString scndGroup   = tr("Health second");
+    QString thrdGroup   = tr("Health third");
 private:
     Ui::HealthExc *ui;
 };

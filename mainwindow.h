@@ -5,6 +5,7 @@
 #include <QMessageBox>
 #include <QCheckBox>
 #include <string>
+#include <map>
 
 
 #include "Personal/ltr.h"
@@ -34,7 +35,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    std::string overallRate();
+    QString overallRate();
 
 private slots:
 
@@ -69,5 +70,6 @@ private:
     Personal *personal;
     Hobby *hobby;
     Health *health;
+    std::map<QString,QString> overallResume;
 };
 #endif // MAINWINDOW_H

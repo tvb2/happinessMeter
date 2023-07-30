@@ -4,14 +4,16 @@
 #include "segment.h"
 #include <QObject>
 #include <QDebug>
+#include <map>
 
 class Health : public Segment
 {
     Q_OBJECT
 public:
     explicit Health(Segment *parent = nullptr);
-    virtual std::string evaluate() override;
-
+    virtual QString evaluate() override;
+private:
+    std::map<QString, QString> result;
 };
 
 #endif // HEALTH_H

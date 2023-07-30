@@ -4,10 +4,10 @@ Segment::Segment(QObject *parent) : QObject(parent)
 {
 
 }
-void Segment::init(std::string _name,
-                  std::string _frst,
-                  std::string _scnd,
-                   std::string _thrd){
+void Segment::init(QString _name,
+                   QString _frst,
+                   QString _scnd,
+                   QString _thrd){
     this->name = _name;
     this->frst = _frst;
     this->scnd = _scnd;

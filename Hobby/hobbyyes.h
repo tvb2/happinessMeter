@@ -14,10 +14,10 @@ class HobbyYes : public QDialog
 public:
     explicit HobbyYes(QWidget *parent = nullptr);
     ~HobbyYes();
-    std::string name = "Hobby";
-    std::string firstGroup = "First  Group Name";
-    std::string scndGroup =  "Second Group Name";
-    std::string thrdGroup =  "Third  Group Name";
+    QString name =       tr("Hobby");
+    QString firstGroup = tr("First  Group Name");
+    QString scndGroup =  tr("Second Group Name");
+    QString thrdGroup =  tr("Third  Group Name");
 
 private:
     Ui::HobbyYes *ui;

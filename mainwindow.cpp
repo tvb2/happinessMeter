@@ -16,8 +16,23 @@ MainWindow::MainWindow(QWidget *parent)
 //initially widgets are not visible
 
 //Overall
-
-//personal life widgets
+        overallResume.emplace("resume",
+                              tr("Your happiness meter out of 100 is: "));
+        overallResume.emplace("tooOptimistic",
+                              tr("You are feeling happy and this is very good, but it looks like you are a bit too much optimistic :-)"));
+        overallResume.emplace("notHappyOK",
+            tr("You do not feel happy, which is not good, but there are reasons for it, please see details below."));
+        overallResume.emplace("modOptimist",
+            tr("You are feeling happy! Congrats! You appear to be a moderate optimist!"));
+        overallResume.emplace("modPessimist",
+                              tr("You don't feel happy and there are reasons for that. You appear to be a moderate pessimist!"));
+        overallResume.emplace("happyCongrats",
+                              tr("You are feeling happy! Congrats!"));
+        overallResume.emplace("unhappyPessimist",
+                              tr("You are feeling unhappy, sorry about that. You appear to be a pessimist!"));
+        overallResume.emplace("realPessimist",
+                              tr("You are feeling unhappy?! You appear to be a real pessimist!"));
+        //personal life widgets
     ui->GBPersonalLife->setEnabled(false);
 
 //professional life widgets
@@ -177,8 +192,8 @@ void MainWindow::on_RBHealthBad_clicked()
     health->setThird(0);
 }
 
-std::string MainWindow::overallRate(){
-    std::string resume = " ";
+QString MainWindow::overallRate(){
+    QString resume;
     overall = (
         personal->getRate() +
         professional->getRate()+
@@ -186,41 +201,49 @@ std::string MainWindow::overallRate(){
         health->getRate()
                )/this->numOfSegments;
     int percent = overall*100;
-    resume = "Your happiness meter is at " + std::to_string(percent) + "%";
-    qDebug() << "overall rate: " << this->overall << resume;
+    resume = overallResume["resume"] + QString::number(percent) + "\n";
+    qDebug() << resume;
     if (overall < 0.5){
         if (ui->RBOverallHappy->isChecked()){
-            return "You are feeling happy and this is very good, but it looks like you are a bit too much optimistic :-)" + resume;
+            resume += overallResume["tooOptimistic"] + "\n";
+            return resume;
         }
         else{
-            return "You do not feel happy, which is not good, but there are reasons for it, please see details below." + resume;
+            resume += overallResume["notHappyOk"] + "\n";
+            return  resume;
         }
     }
     if (overall == 0.5){
         if (ui->RBOverallHappy->isChecked()){
-            return "You are feeling happy! Congrats! You appear to be a moderate optimist!" + resume;
+            resume += overallResume["modOptimist"] + "\n";
+            return resume;
         }
         else{
-            return "You don't feel happy and there are reasons for that. You appear to be a moderate pessimist!" + resume;
+            resume += overallResume["modPessimist"] + "\n";
+            return resume;
         }
     }
     else if((overall > 0.5) && (overall < 0.75)){
         if (ui->RBOverallHappy->isChecked()){
-            return "You are feeling happy! Congrats!" + resume;
+            resume += overallResume["happyCongrats"] + "\n";
+            return resume;
         }
         else{
-            return "You are feeling unhappy, sorry about that. You appear to be a pessimist!" + resume;
+            resume += overallResume["unhappyPessimist"] + "\n";
+            return resume;
         }
     }
     else if (overall >= 0.75){
         if (ui->RBOverallHappy->isChecked()){
-            return "You are feeling happy! Congrats!" + resume;
+            resume += overallResume["happyCongrats"] + "\n";
+            return resume;
         }
         else{
-            return "You are feeling unhappy?! You appear to be a real pessimist!" + resume;
+            resume += overallResume["realPessimist"] + "\n";
+            return resume;
         }
     }
-    return "Hm.. something went wrong, please report error #1 to the developer..";
+    return tr("Hm.. something went wrong, please report error #1 to the developer..");
 }
 
 void MainWindow::on_PBTell_clicked()
@@ -229,7 +252,7 @@ void MainWindow::on_PBTell_clicked()
     personal->setRate();
     hobby->setRate();
     health->setRate();
-   std::string persSTR, profSTR, hobbySTR, healthSTR, overallSTR;
+   QString persSTR, profSTR, hobbySTR, healthSTR, overallSTR;
    QMessageBox *message = nullptr;
 
    persSTR = personal->evaluate();
@@ -237,13 +260,13 @@ void MainWindow::on_PBTell_clicked()
    hobbySTR = hobby->evaluate();
    healthSTR = health->evaluate();
    overallSTR = overallRate();
-    message->information(this,"Your happiness meter...", QString::fromStdString(
-                                                              overallSTR +
-                                                              persSTR +
-                                                              profSTR +
-                                                              hobbySTR +
-                                                              healthSTR
-                                                                                 ));
+   message->information(this,tr("Your happiness meter..."),
+                        overallSTR + "\n" +
+                        persSTR + "\n" +
+                        profSTR + "\n" +
+                        hobbySTR + "\n" +
+                        healthSTR
+    );
 }
 
 

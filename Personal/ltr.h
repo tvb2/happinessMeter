@@ -16,10 +16,10 @@ class LTR : public QDialog
 public:
     explicit LTR(QWidget *parent = nullptr);
     ~LTR();
-    std::string name = "Relations ";
-    std::string firstGroup = "Family";
-    std::string scndGroup =  "Friends";
-    std::string thrdGroup = "Partner";
+    QString name =      tr("Relations ");
+    QString firstGroup =tr( "Family");
+    QString scndGroup = tr( "Friends");
+    QString thrdGroup = tr("Partner");
 signals:
     void sendFirst(double fst);
     void sendSecond(double scnd);

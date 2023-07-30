@@ -83,7 +83,7 @@ void Busy::moneySet(){
 void Busy::closeEvent (QCloseEvent *event)
 {
     if (!this->complete){
-    QMessageBox::StandardButton resBtn = QMessageBox::question(this, "Professional Life",
+        QMessageBox::StandardButton resBtn = QMessageBox::question(this, tr("Professional Life"),
                                                                tr("Please select at least one option in each group\n"),
                                                                QMessageBox::Ok | QMessageBox::NoButton, QMessageBox::Ok);
         event->ignore();

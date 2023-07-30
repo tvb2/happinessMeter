@@ -3,7 +3,7 @@
 #include "segment.h"
 #include <QDebug>
 #include <QObject>
-
+#include <map>
 
 class Personal : public Segment
 {
@@ -11,8 +11,9 @@ class Personal : public Segment
 public:
     explicit Personal(Segment *parent = nullptr);
 public slots:
-    virtual std::string evaluate() override;
-
+    virtual QString evaluate() override;
+private:
+    std::map<QString, QString> result;
 };
 
 #endif // PERSONAL_H

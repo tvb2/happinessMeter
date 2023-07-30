@@ -16,10 +16,10 @@ class STR : public QDialog
 public:
     explicit STR(QWidget *parent = nullptr);
     ~STR();
-    std::string name = "Relations ";
-    std::string firstGroup = "Family";
-    std::string scndGroup =  "Friends";
-    std::string thrdGroup = "None";
+    QString name =      tr("Relations ");
+    QString firstGroup =tr( "Family");
+    QString scndGroup = tr( "Friends");
+    QString thrdGroup = tr("None");
 
 signals:
     void sendFirst(double fst);
