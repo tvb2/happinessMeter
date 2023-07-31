@@ -83,8 +83,10 @@
     </message>
     <message>
         <location filename="Professional/busy.cpp" line="87"/>
-        <source>Please select at least one option in each group
+        <source>Please select one option in each group
 </source>
+        <oldsource>Please select at least one option in each group
+</oldsource>
         <translation>Нужно выбрать один пункт в каждом разделе</translation>
     </message>
     <message>
@@ -313,8 +315,10 @@
     </message>
     <message>
         <location filename="Personal/ltr.cpp" line="81"/>
-        <source>Please select at least one option in each group
+        <source>Please select one option in each group
 </source>
+        <oldsource>Please select at least one option in each group
+</oldsource>
         <translation>Нужно выбрать один пункт в каждом разделе</translation>
     </message>
     <message>
@@ -565,7 +569,8 @@
     </message>
     <message>
         <location filename="professional.cpp" line="20"/>
-        <source>But boring work will not make you happy. Can you change your attitude or slightly vary the tasks you do? Otherwise change your job</source>
+        <source>Boring work will not make you happy. Can you change your attitude or slightly vary the tasks you do? Otherwise change your job</source>
+        <oldsource>But boring work will not make you happy. Can you change your attitude or slightly vary the tasks you do? Otherwise change your job</oldsource>
         <translation>Скучное занятие не сделает тебя счастливым. Попробуй изменить своё отношение или разнообразить свою деятельность. Если не получается - лучше сменить работу.</translation>
     </message>
     <message>
@@ -575,7 +580,8 @@
     </message>
     <message>
         <location filename="professional.cpp" line="24"/>
-        <source>But money matters in this life, for sure. It is important to receive fair compensation for your work</source>
+        <source>Money matters in this life, for sure. It is important to receive fair compensation for your work</source>
+        <oldsource>But money matters in this life, for sure. It is important to receive fair compensation for your work</oldsource>
         <translation>Деньги имеют значение в этой жизни. Важно получать справедливую компенсацию за свою деятельность.</translation>
     </message>
 </context>
@@ -640,9 +646,11 @@
     </message>
     <message>
         <location filename="Personal/str.cpp" line="65"/>
-        <source>Please select at least one option in each group
+        <source>Please select one option in each group
 </source>
-        <translation>Нужно выбрать один пункт в каждом разделе</translation>
+        <oldsource>Please select at least one option in each group
+</oldsource>
+        <translation type="unfinished">Нужно выбрать один пункт в каждом разделе</translation>
     </message>
     <message>
         <location filename="Personal/str.h" line="19"/>

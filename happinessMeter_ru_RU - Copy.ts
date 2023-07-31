@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="en_US">
+<TS version="2.1" language="ru_RU">
 <context>
     <name>Busy</name>
     <message>
@@ -53,7 +53,7 @@
     <message>
         <location filename="Professional/busy.ui" line="113"/>
         <source>I hate the people I deal with</source>
-        <translation type="unfinished">Приходится работать с **** :-(</translation>
+        <translation>Приходится работать с **** :-(</translation>
     </message>
     <message>
         <location filename="Professional/busy.ui" line="123"/>
@@ -146,27 +146,27 @@
     <message>
         <location filename="Health/healthexc.ui" line="13"/>
         <source>Dialog</source>
-        <translation type="unfinished">Предупреждение</translation>
+        <translation>Диалог</translation>
     </message>
     <message>
         <location filename="Health/healthexc.h" line="17"/>
         <source>Health</source>
-        <translation type="unfinished"></translation>
+        <translation>Здоровье</translation>
     </message>
     <message>
         <location filename="Health/healthexc.h" line="18"/>
         <source>Health first</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="Health/healthexc.h" line="19"/>
         <source>Health second</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="Health/healthexc.h" line="20"/>
         <source>Health third</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -192,7 +192,7 @@
     <message>
         <location filename="Hobby/hobbycrap.ui" line="14"/>
         <source>No time for hobby</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -200,7 +200,7 @@
     <message>
         <location filename="Hobby/hobbyno.ui" line="14"/>
         <source>No hobby</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -208,27 +208,27 @@
     <message>
         <location filename="Hobby/hobbyyes.ui" line="14"/>
         <source>My hobby</source>
-        <translation type="unfinished"></translation>
+        <translation>Хобби</translation>
     </message>
     <message>
         <location filename="Hobby/hobbyyes.h" line="17"/>
         <source>Hobby</source>
-        <translation type="unfinished">Хобби</translation>
+        <translation>Хобби</translation>
     </message>
     <message>
         <location filename="Hobby/hobbyyes.h" line="18"/>
         <source>First  Group Name</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="Hobby/hobbyyes.h" line="19"/>
         <source>Second Group Name</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="Hobby/hobbyyes.h" line="20"/>
         <source>Third  Group Name</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
