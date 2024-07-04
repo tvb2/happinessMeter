@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "org.qtproject.example.happinessMeter-merged_res-6:/drawable-xxhdpi_icon.png.flat",
+        "source": "org.qtproject.example.happinessMeter-android-build-7:/drawable-xxhdpi/icon.png"
+    },
+    {
+        "merged": "org.qtproject.example.happinessMeter-merged_res-6:/drawable-ldpi_logo.png.flat",
+        "source": "org.qtproject.example.happinessMeter-android-build-7:/drawable-ldpi/logo.png"
+    },
+    {
+        "merged": "org.qtproject.example.happinessMeter-merged_res-6:/drawable-ldpi_icon.png.flat",
+        "source": "org.qtproject.example.happinessMeter-android-build-7:/drawable-ldpi/icon.png"
+    },
+    {
+        "merged": "org.qtproject.example.happinessMeter-merged_res-6:/drawable-xhdpi_icon.png.flat",
+        "source": "org.qtproject.example.happinessMeter-android-build-7:/drawable-xhdpi/icon.png"
+    },
+    {
+        "merged": "org.qtproject.example.happinessMeter-merged_res-6:/drawable-xxxhdpi_icon.png.flat",
+        "source": "org.qtproject.example.happinessMeter-android-build-7:/drawable-xxxhdpi/icon.png"
+    },
+    {
+        "merged": "org.qtproject.example.happinessMeter-merged_res-6:/drawable-ldpi_logo_land.png.flat",
+        "source": "org.qtproject.example.happinessMeter-android-build-7:/drawable-ldpi/logo_land.png"
+    },
+    {
+        "merged": "org.qtproject.example.happinessMeter-merged_res-6:/drawable_splashscreen_port.xml.flat",
+        "source": "org.qtproject.example.happinessMeter-android-build-7:/drawable/splashscreen_port.xml"
+    },
+    {
+        "merged": "org.qtproject.example.happinessMeter-merged_res-6:/drawable-ldpi_logo_port.png.flat",
+        "source": "org.qtproject.example.happinessMeter-android-build-7:/drawable-ldpi/logo_port.png"
+    },
+    {
+        "merged": "org.qtproject.example.happinessMeter-merged_res-6:/drawable-hdpi_icon.png.flat",
+        "source": "org.qtproject.example.happinessMeter-android-build-7:/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "org.qtproject.example.happinessMeter-merged_res-6:/drawable_splashscreen_land.xml.flat",
+        "source": "org.qtproject.example.happinessMeter-android-build-7:/drawable/splashscreen_land.xml"
+    },
+    {
+        "merged": "org.qtproject.example.happinessMeter-merged_res-6:/drawable_splashscreen.xml.flat",
+        "source": "org.qtproject.example.happinessMeter-android-build-7:/drawable/splashscreen.xml"
+    },
+    {
+        "merged": "org.qtproject.example.happinessMeter-merged_res-6:/drawable-mdpi_icon.png.flat",
+        "source": "org.qtproject.example.happinessMeter-android-build-7:/drawable-mdpi/icon.png"
+    }
+]

@@ -1,0 +1,64 @@
+{
+    "logs": [
+        {
+            "outputFile": "org.qtproject.example.happinessMeter-mergeDebugResources-4:/values/values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\bogda\\qt\\happinessMeter\\build\\Android_Qt_6_5_1_Clang_x86_64-Release\\android-build\\res\\values\\libs.xml",
+                    "from": {
+                        "startLines": "4,17,8,23,21,24,22",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "148,499,203,717,620,768,669",
+                        "endLines": "6,19,15,23,21,24,22",
+                        "endColumns": "12,12,12,50,48,47,47",
+                        "endOffsets": "197,614,493,763,664,811,712"
+                    },
+                    "to": {
+                        "startLines": "2,5,8,16,18,19,21",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,109,229,524,683,724,862",
+                        "endLines": "4,7,15,16,18,19,21",
+                        "endColumns": "12,12,12,50,40,39,47",
+                        "endOffsets": "104,224,519,570,719,759,905"
+                    }
+                },
+                {
+                    "source": "C:\\Qt\\6.5.1\\android_x86_64\\src\\android\\java\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "85,193",
+                        "endColumns": "107,97",
+                        "endOffsets": "188,286"
+                    },
+                    "to": {
+                        "startLines": "17,20",
+                        "startColumns": "4,4",
+                        "startOffsets": "575,764",
+                        "endColumns": "107,97",
+                        "endOffsets": "678,857"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\bogda\\qt\\happinessMeter\\build\\Android_Qt_6_5_1_Clang_x86_64-Release\\android-build\\res\\values\\splashscreentheme.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "176"
+                    },
+                    "to": {
+                        "startLines": "22",
+                        "startColumns": "4",
+                        "startOffsets": "910",
+                        "endLines": "24",
+                        "endColumns": "12",
+                        "endOffsets": "1031"
+                    }
+                }
+            ]
+        }
+    ]
+}

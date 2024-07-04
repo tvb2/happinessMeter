@@ -1,0 +1,4 @@
+#Thu Jul 04 17:55:26 EDT 2024
+base.0=C\:\\Users\\bogda\\qt\\happinessMeter\\build\\Android_Qt_6_5_1_Clang_x86_64-Release\\android-build\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

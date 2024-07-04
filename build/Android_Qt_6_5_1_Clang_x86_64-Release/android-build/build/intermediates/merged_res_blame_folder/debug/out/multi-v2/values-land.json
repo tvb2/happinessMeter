@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "org.qtproject.example.happinessMeter-mergeDebugResources-4:/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\bogda\\qt\\happinessMeter\\build\\Android_Qt_6_5_1_Clang_x86_64-Release\\android-build\\res\\values-land\\splashscreentheme.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "181"
+                    }
+                }
+            ]
+        }
+    ]
+}

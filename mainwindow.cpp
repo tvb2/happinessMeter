@@ -21,7 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
         overallResume.emplace("tooOptimistic",
                               tr("You are feeling happy and this is very good, but it looks like you are a bit too much optimistic :-)"));
         overallResume.emplace("notHappyOK",
-            tr("You do not feel happy, which is not good, but there are reasons for it, please see details below."));
+                              tr("You do not feel happy, which is not good, but there are reasons for it, please see details below."));
         overallResume.emplace("modOptimist",
             tr("You are feeling happy! Congrats! You appear to be a moderate optimist!"));
         overallResume.emplace("modPessimist",
@@ -32,7 +32,7 @@ MainWindow::MainWindow(QWidget *parent)
                               tr("You are feeling unhappy, sorry about that. You appear to be a pessimist!"));
         overallResume.emplace("realPessimist",
                               tr("You are feeling unhappy?! You appear to be a real pessimist!"));
-        //personal life widgets
+//personal life widgets
     ui->GBPersonalLife->setEnabled(false);
 
 //professional life widgets
@@ -209,7 +209,7 @@ QString MainWindow::overallRate(){
             return resume;
         }
         else{
-            resume += overallResume["notHappyOk"] + "\n";
+            resume += overallResume["notHappyOK"] + "\n";
             return  resume;
         }
     }

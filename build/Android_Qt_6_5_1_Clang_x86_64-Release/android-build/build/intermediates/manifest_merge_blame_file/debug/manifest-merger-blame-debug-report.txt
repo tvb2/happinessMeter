@@ -1,0 +1,171 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.qtproject.example.happinessMeter"
+4    android:installLocation="auto"
+5    android:versionCode="8"
+6    android:versionName="1.7" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="23"
+9-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml
+10        android:targetSdkVersion="33" />
+10-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:3:5-67
+12-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:3:22-64
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:4:5-81
+13-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:4:22-78
+14
+15    <supports-screens
+15-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:6:5-135
+16        android:anyDensity="true"
+16-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:6:23-48
+17        android:largeScreens="true"
+17-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:6:49-76
+18        android:normalScreens="true"
+18-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:6:77-105
+19        android:smallScreens="true" />
+19-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:6:106-133
+20
+21    <application
+21-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:5-29:19
+22        android:name="org.qtproject.qt.android.bindings.QtApplication"
+22-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:18-80
+23        android:allowBackup="true"
+23-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:237-263
+24        android:allowNativeHeapPointerTagging="false"
+24-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:191-236
+25        android:debuggable="true"
+26        android:fullBackupOnly="false"
+26-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:264-294
+27        android:hardwareAccelerated="true"
+27-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:81-115
+28        android:icon="@drawable/icon"
+28-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:295-324
+29        android:label="happinessMeter"
+29-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:116-146
+30        android:requestLegacyExternalStorage="true" >
+30-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:147-190
+31        <activity
+31-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:8:9-28:20
+32            android:name="org.qtproject.qt.android.bindings.QtActivity"
+32-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:8:19-78
+33            android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|layoutDirection|locale|fontScale|keyboard|keyboardHidden|navigation|mcc|mnc|density"
+33-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:8:79-248
+34            android:exported="true"
+34-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:8:351-374
+35            android:label="happinessMeter"
+35-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:8:249-279
+36            android:launchMode="singleTop"
+36-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:8:280-310
+37            android:screenOrientation="unspecified"
+37-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:8:311-350
+38            android:theme="@style/splashScreenTheme" >
+38-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:8:375-415
+39            <intent-filter>
+39-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:9:13-12:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:10:17-68
+40-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:10:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:11:17-76
+42-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:11:27-74
+43            </intent-filter>
+44
+45            <meta-data
+45-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:13:13-92
+46                android:name="android.app.lib_name"
+46-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:13:24-59
+47                android:value="happinessMeter" />
+47-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:13:60-90
+48            <meta-data
+48-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:14:13-79
+49                android:name="android.app.arguments"
+49-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:14:24-60
+50                android:value="" />
+50-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:14:61-77
+51            <meta-data
+51-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:15:13-98
+52                android:name="android.app.extract_android_style"
+52-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:15:24-72
+53                android:value="minimal" />
+53-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:15:73-96
+54            <meta-data
+54-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:16:13-117
+55                android:name="android.app.splash_screen_drawable"
+55-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:16:24-73
+56                android:resource="@drawable/splashscreen" />
+56-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:16:74-115
+57            <meta-data
+57-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:17:13-131
+58                android:name="android.app.splash_screen_drawable_portrait"
+58-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:17:24-82
+59                android:resource="@drawable/splashscreen_port" />
+59-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:17:83-129
+60            <meta-data
+60-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:18:13-132
+61                android:name="android.app.splash_screen_drawable_landscape"
+61-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:18:24-83
+62                android:resource="@drawable/splashscreen_land" />
+62-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:18:84-130
+63            <meta-data
+63-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:16:13-117
+64                android:name="android.app.splash_screen_drawable"
+64-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:16:24-73
+65                android:resource="@drawable/splashscreen" />
+65-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:16:74-115
+66            <meta-data
+66-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:17:13-131
+67                android:name="android.app.splash_screen_drawable_portrait"
+67-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:17:24-82
+68                android:resource="@drawable/splashscreen_port" />
+68-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:17:83-129
+69            <meta-data
+69-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:18:13-132
+70                android:name="android.app.splash_screen_drawable_landscape"
+70-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:18:24-83
+71                android:resource="@drawable/splashscreen_land" />
+71-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:18:84-130
+72            <meta-data
+72-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:16:13-117
+73                android:name="android.app.splash_screen_drawable"
+73-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:16:24-73
+74                android:resource="@drawable/splashscreen" />
+74-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:16:74-115
+75            <meta-data
+75-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:17:13-131
+76                android:name="android.app.splash_screen_drawable_portrait"
+76-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:17:24-82
+77                android:resource="@drawable/splashscreen_port" />
+77-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:17:83-129
+78            <meta-data
+78-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:18:13-132
+79                android:name="android.app.splash_screen_drawable_landscape"
+79-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:18:24-83
+80                android:resource="@drawable/splashscreen_land" />
+80-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:18:84-130
+81            <meta-data
+81-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:16:13-117
+82                android:name="android.app.splash_screen_drawable"
+82-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:16:24-73
+83                android:resource="@drawable/splashscreen" />
+83-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:16:74-115
+84            <meta-data
+84-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:17:13-131
+85                android:name="android.app.splash_screen_drawable_portrait"
+85-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:17:24-82
+86                android:resource="@drawable/splashscreen_port" />
+86-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:17:83-129
+87            <meta-data
+87-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:18:13-132
+88                android:name="android.app.splash_screen_drawable_landscape"
+88-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:18:24-83
+89                android:resource="@drawable/splashscreen_land" />
+89-->C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:18:84-130
+90        </activity>
+91    </application>
+92
+93</manifest>

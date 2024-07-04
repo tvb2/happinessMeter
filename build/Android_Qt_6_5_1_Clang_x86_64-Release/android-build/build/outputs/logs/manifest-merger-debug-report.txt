@@ -1,0 +1,137 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:2:1-30:12
+	package
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:2:70-116
+		INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml
+		INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:2:172-197
+		INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml
+		INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:2:148-171
+		INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml
+		INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml
+	android:installLocation
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:2:117-147
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:3:5-67
+	android:name
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:3:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:4:5-81
+	android:name
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:4:22-78
+supports-screens
+ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:6:5-135
+	android:largeScreens
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:6:49-76
+	android:smallScreens
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:6:106-133
+	android:normalScreens
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:6:77-105
+	android:anyDensity
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:6:23-48
+application
+ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:5-29:19
+	android:requestLegacyExternalStorage
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:147-190
+	android:label
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:116-146
+	android:hardwareAccelerated
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:81-115
+	android:icon
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:295-324
+	android:allowBackup
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:237-263
+	android:allowNativeHeapPointerTagging
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:191-236
+	android:fullBackupOnly
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:264-294
+	android:name
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:7:18-80
+activity#org.qtproject.qt.android.bindings.QtActivity
+ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:8:9-28:20
+	android:screenOrientation
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:8:311-350
+	android:label
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:8:249-279
+	android:launchMode
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:8:280-310
+	android:exported
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:8:351-374
+	android:configChanges
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:8:79-248
+	android:theme
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:8:375-415
+	android:name
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:8:19-78
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:9:13-12:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:10:17-68
+	android:name
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:10:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:11:17-76
+	android:name
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:11:27-74
+meta-data#android.app.lib_name
+ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:13:13-92
+	android:value
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:13:60-90
+	android:name
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:13:24-59
+meta-data#android.app.arguments
+ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:14:13-79
+	android:value
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:14:61-77
+	android:name
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:14:24-60
+meta-data#android.app.extract_android_style
+ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:15:13-98
+	android:value
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:15:73-96
+	android:name
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:15:24-72
+meta-data#android.app.splash_screen_drawable
+ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:16:13-117
+	android:resource
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:16:74-115
+	android:name
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:16:24-73
+meta-data#android.app.splash_screen_drawable_portrait
+ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:17:13-131
+	android:resource
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:17:83-129
+	android:name
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:17:24-82
+meta-data#android.app.splash_screen_drawable_landscape
+ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:18:13-132
+	android:resource
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:18:84-130
+	android:name
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml:18:24-83
+uses-sdk
+INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml
+INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml
+INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml
+INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml
+		INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml
+		ADDED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml
+		INJECTED from C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\AndroidManifest.xml

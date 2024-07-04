@@ -75,3 +75,9 @@ contains(ANDROID_TARGET_ARCH,arm64-v8a) {
 
 RESOURCES += \
     translations.qrc
+
+contains(ANDROID_TARGET_ARCH,x86_64) {
+    ANDROID_PACKAGE_SOURCE_DIR = \
+        $$PWD/android
+}
+ANDROID_TARGET_SDK_VERSION = 33

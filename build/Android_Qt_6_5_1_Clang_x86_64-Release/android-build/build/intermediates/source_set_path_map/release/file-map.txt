@@ -1,0 +1,9 @@
+org.qtproject.example.happinessMeter-java-0 C:\Qt\6.5.1\android_x86_64\src\android\java\res
+org.qtproject.example.happinessMeter-pngs-1 C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\build\generated\res\pngs\release
+org.qtproject.example.happinessMeter-resValues-2 C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\build\generated\res\resValues\release
+org.qtproject.example.happinessMeter-rs-3 C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\build\generated\res\rs\release
+org.qtproject.example.happinessMeter-mergeReleaseResources-4 C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
+org.qtproject.example.happinessMeter-mergeReleaseResources-5 C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+org.qtproject.example.happinessMeter-merged_res-6 C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\build\intermediates\merged_res\release
+org.qtproject.example.happinessMeter-android-build-7 C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\res
+org.qtproject.example.happinessMeter-release-8 C:\Users\bogda\qt\happinessMeter\build\Android_Qt_6_5_1_Clang_x86_64-Release\android-build\src\release\res
